@@ -1,0 +1,23 @@
+my.cpp里放你自己的代码，编译成my.exe
+std.cpp里放标程，编译成std.exe
+推荐用dev-c++，单文件编译方便
+
+然后自己修改rand.cpp数据生成器
+按照题目格式输出一组数据
+例如题目格式是，T组数据，每组数据一个n，一个m，然后n个1~m的整数
+你就这么写：
+	printf("1\n");
+	int n=10;
+	int m=random(1,20);
+	printf("%d %d\n",n,m);
+	for(int i=0 ; i<n ; ++i)
+	{
+		printf(" %d ",random(0,m));
+	}
+	printf("\n");
+数据量能小则小，方便调试。
+
+然后编译成rand.exe
+最后运行 循环随机对拍.bat等待结果即可，对不上会自动暂停
+
+by D_Star 2016.04.14

@@ -1,0 +1,204 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 30 14:44:23 2019
+# Process ID: 4876
+# Current directory: F:/COD/lab6/MUL_MIPS_CPU_cache
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15836 F:\COD\lab6\MUL_MIPS_CPU_cache\MUL_MIPS_CPU.xpr
+# Log file: F:/COD/lab6/MUL_MIPS_CPU_cache/vivado.log
+# Journal file: F:/COD/lab6/MUL_MIPS_CPU_cache\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 775.605 ; gain = 70.883
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ddu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim/inst_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ddu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ec90331b1a4f487e8989cb5a9ab326b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ddu_sim_behav xil_defaultlib.ddu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.next_PC
+Compiling module xil_defaultlib.PC1
+Compiling module xil_defaultlib.MEM
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.RAM128X1D
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.dist_mem_gen_0_dpram
+Compiling module xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0...
+Compiling module xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.cache_memory_module
+Compiling module xil_defaultlib.cache_control
+Compiling module xil_defaultlib.IRnMDR
+Compiling module xil_defaultlib.con_IR_RF
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.RFout_AB
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.ALU_Operands
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_out
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.DDU
+Compiling module xil_defaultlib.ddu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ddu_sim_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 807.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ddu_sim_behav -key {Behavioral:sim_1:Functional:ddu_sim} -tclbatch {ddu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source ddu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ddu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 807.563 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/pc}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/clk_slow}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/clk_fast}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/PC}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/Instruction}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 38 us
+run 38 us
+run 38 us
+run 38 us
+run 38 us
+run 38 us
+run 38 us
+run 38 us
+run 38 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/cu/current_state}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 38 us
+run 500 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 us
+run 250 us
+run 50 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/rw_addr}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/cache_dut/cache_addr}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/cache_dut/cache}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/current_state}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/read}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/datatocpu}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/hit}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/hit0}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/hit1}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/tag}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/MemWrite}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/MemRead}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 15:33:33 2019...

@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/COD/lab4/paintboard/paintboard.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sim_1/new/board_sim.v,1556274252,verilog,,,,board_sim,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.v,1556201145,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/DCU.v,,clk_wiz_0,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0_clk_wiz.v,1556201144,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v,1556192826,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0_clk_wiz.v,,dist_mem_gen_0,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/DCU.v,1556241236,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/PCU.v,,DCU,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,
+,,,,F:/COD/lab4/paintboard/paintboard.srcs/sim_1/new/board_sim.v,,FSM,,,,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/PCU.v,1556282698,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/board_top.v,,PCU,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/board_top.v,1556238576,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/FSM.v,,board_top,,,../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_2,,,,,

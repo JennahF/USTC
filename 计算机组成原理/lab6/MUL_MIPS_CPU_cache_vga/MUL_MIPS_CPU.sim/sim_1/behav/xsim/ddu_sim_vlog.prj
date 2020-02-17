@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/ALU.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/ALU_Operands.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/ALU_out.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/DCU.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/DDU.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/IRnMDR.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/MEM.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/PC.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/PC1.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/RF.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/RFout_AB.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/cache.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/cache_memory_module.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/con_IR_RF.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/cpu.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/cur_data.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/display_word.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/seg.v" \
+"../../../../MUL_MIPS_CPU.srcs/sources_1/new/word_dictionary.v" \
+"../../../../MUL_MIPS_CPU.srcs/sim_1/new/ddusim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

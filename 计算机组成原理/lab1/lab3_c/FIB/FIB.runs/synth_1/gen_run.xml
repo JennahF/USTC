@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553168336">
+  <File Type="PA-TCL" Name="FIB.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FIB_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FIB_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FIB.vds"/>
+  <File Type="RDS-UTIL" Name="FIB_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FIB_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FIB.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FIB_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FIB_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/FIB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FIB"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

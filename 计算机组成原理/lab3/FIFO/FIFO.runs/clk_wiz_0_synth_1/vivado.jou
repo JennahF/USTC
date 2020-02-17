@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 11 20:12:08 2019
+# Process ID: 6428
+# Current directory: F:/COD/lab3/FIFO/FIFO.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: F:/COD/lab3/FIFO/FIFO.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: F:/COD/lab3/FIFO/FIFO.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

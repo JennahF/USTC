@@ -1,0 +1,25 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sim_1/new/controlunit_sim.v,1557677968,verilog,,,,controlunit_sim,,,../../../../MUL_MIPS_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sim_1/new/ddu_sim.v,1558598665,verilog,,,,ddu_sim,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1556617238,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v,,clk_wiz_0,,,../../../../MUL_MIPS_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1556617238,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../MUL_MIPS_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1558523072,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v,,dist_mem_gen_0,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v,1558696237,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU_Operands.v,,ALU,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU_Operands.v,1558696765,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v,,ALU_Operands,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v,1558696222,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU_out.v,,ALU_control,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/ALU_out.v,1558604263,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/DDU.v,,ALU_out,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/DDU.v,1558713159,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/IRnMDR.v,,DDU,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/IRnMDR.v,1558613734,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/MEM.v,,IRnMDR,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/MEM.v,1558702373,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/PC.v,,MEM,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/PC.v,1558666839,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/PC1.v,,next_PC,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/PC1.v,1558699734,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/RF.v,,PC1,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/RF.v,1558702782,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/RFout_AB.v,,RF,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/RFout_AB.v,1558603168,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/con_IR_RF.v,,RFout_AB,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/con_IR_RF.v,1558665840,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v,,con_IR_RF,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v,1558701306,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/cpu.v,,control_unit,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/cpu.v,1558702402,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/seg.v,,cpu,,,,,,,,
+F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sources_1/new/seg.v,1558522162,verilog,,F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sim_1/new/ddu_sim.v,,seg,,,,,,,,

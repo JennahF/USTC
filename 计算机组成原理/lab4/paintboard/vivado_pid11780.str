@@ -1,0 +1,216 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 11780
+License: Customer
+
+Current time: 	Fri May 24 16:04:52 GMT+08:00 2019
+Time zone: 	GMT+08:00 (GMT+08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 16 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	fr
+User home directory: C:/Users/fr
+User working directory: F:/COD/lab4/paintboard
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/fr/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/fr/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/fr/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/COD/lab4/paintboard/vivado.log
+Vivado journal file location: 	F:/COD/lab4/paintboard/vivado.jou
+Engine tmp dir: 	F:/COD/lab4/paintboard/.Xil/Vivado-11780-MSI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 564 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: F:\COD\lab4\paintboard\paintboard.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 53 MB (+53503kb) [00:00:07]
+// [Engine Memory]: 526 MB (+400267kb) [00:00:07]
+// Tcl Message: open_project F:/COD/lab4/paintboard/paintboard.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 MB (+19855kb) [00:00:11]
+// [Engine Memory]: 586 MB (+35247kb) [00:00:11]
+// [GUI Memory]: 79 MB (+495kb) [00:00:13]
+// [Engine Memory]: 625 MB (+9613kb) [00:00:14]
+// Tcl Message: open_project F:/COD/lab4/paintboard/paintboard.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 46 MB. Current time: 5/24/19 4:04:59 PM GMT+08:00
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 825.090 ; gain = 148.996 
+// Project name: paintboard; location: F:/COD/lab4/paintboard; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// Elapsed time: 154 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, PCU.v]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, PCU.v]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, FSM.v]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, FSM.v]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 86 MB (+2927kb) [00:02:56]
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, board_top.v]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, PCU.v]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, PCU.v]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [Engine Memory]: 656 MB (+615kb) [00:03:56]
+// Elapsed time: 74 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ARCHIVE_PROJECT, "Archive..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_ARCHIVE_PROJECT
+// a (ck): Archive Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+selectButton("PAResourceAtoD.ArchiveProjectDialog_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_Cancel", "Cancel"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+// 'a' command handler elapsed time: 3 seconds
+dismissDialog("Archive Project"); // a (ck)
+// [GUI Memory]: 92 MB (+2194kb) [00:07:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 48 MB. Current time: 5/24/19 4:35:00 PM GMT+08:00
+// [GUI Memory]: 98 MB (+855kb) [00:52:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 45 MB. Current time: 5/24/19 5:05:00 PM GMT+08:00
+// Elapsed time: 5052 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// bx (ck):  Auto Connect : addNotify
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 1,005 MB (+330996kb) [01:29:04]
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6E9E2A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/COD/lab4/paintboard/paintboard.runs/impl_1/board_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,016 MB. GUI used memory: 52 MB. Current time: 5/24/19 5:33:51 PM GMT+08:00
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/COD/lab4/paintboard/paintboard.runs/impl_1/board_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,038 MB. GUI used memory: 49 MB. Current time: 5/24/19 5:42:21 PM GMT+08:00
+// [GUI Memory]: 104 MB (+1118kb) [01:58:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,039 MB. GUI used memory: 66 MB. Current time: 5/24/19 6:12:21 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,039 MB. GUI used memory: 48 MB. Current time: 5/24/19 6:42:21 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,039 MB. GUI used memory: 49 MB. Current time: 5/24/19 7:12:22 PM GMT+08:00
+// Elapsed time: 7406 seconds
+closeMainWindow("paintboard - [F:/COD/lab4/paintboard/paintboard.xpr] - Vivado 2018.2"); // ck
+// aj (ck): Save Project: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6E9E2A 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE

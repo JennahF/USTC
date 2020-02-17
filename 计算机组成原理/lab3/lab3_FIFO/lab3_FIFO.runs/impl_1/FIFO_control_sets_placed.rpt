@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr 19 19:59:19 2019
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FIFO_control_sets_placed.rpt
+| Design       : FIFO
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    14 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            1 |
+|      8 |           10 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              38 |            8 |
+| No           | No                    | Yes                    |              68 |           10 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              16 |            5 |
+| Yes          | No                    | Yes                    |              64 |           18 |
+| Yes          | Yes                   | No                     |              80 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|              Clock Signal             |            Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++---------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  SCU_DUT/divider_DUT/CLK              |                                     | SCU_DUT/divider_DUT/cnt1_reg[0]_0   |                1 |              6 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/outer[3]_i_1_n_0 |                                     |                2 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[1][0][0]  | rst_IBUF                            |                2 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/E[0]             | rst_IBUF                            |                1 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[6][0][0]  | rst_IBUF                            |                1 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[3][0][0]  | rst_IBUF                            |                3 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[5][0][0]  | rst_IBUF                            |                3 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/wd[3]_i_1_n_0    |                                     |                3 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[2][0][0]  | rst_IBUF                            |                3 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[0][0][0]  | rst_IBUF                            |                4 |              8 |
+|  clk_IBUF_BUFG                        | LCU_RF_DUT/DUT_LCU/RF_reg[4][0][0]  | rst_IBUF                            |                1 |              8 |
+|  SCU_DUT/divider_DUT/d1/inst/clk_out1 |                                     | SCU_DUT/divider_DUT/cnt1_reg[0]_0   |                3 |             26 |
+|  clk_IBUF_BUFG                        |                                     | rst_IBUF                            |                6 |             36 |
+|  clk_IBUF_BUFG                        |                                     |                                     |                8 |             38 |
+|  clk_IBUF_BUFG                        | debouncer_in_DUT/cnt[0]_i_2__0_n_0  | debouncer_in_DUT/clear              |                5 |             40 |
+|  clk_IBUF_BUFG                        | debouncer_out_DUT/cnt[0]_i_2_n_0    | debouncer_out_DUT/cnt[0]_i_1__0_n_0 |                5 |             40 |
++---------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+
+

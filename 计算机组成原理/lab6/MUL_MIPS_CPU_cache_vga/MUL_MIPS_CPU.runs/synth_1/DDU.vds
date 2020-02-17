@@ -1,0 +1,1220 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 31 20:33:26 2019
+# Process ID: 652
+# Current directory: F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/synth_1
+# Command line: vivado.exe -log DDU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DDU.tcl
+# Log file: F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/synth_1/DDU.vds
+# Journal file: F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DDU.tcl -notrace
+Command: synth_design -top DDU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 386.039 ; gain = 97.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DDU' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/DDU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/seg.v:23]
+INFO: [Synth 8-226] default block is never used [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/seg.v:42]
+INFO: [Synth 8-226] default block is never used [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/seg.v:75]
+INFO: [Synth 8-226] default block is never used [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/seg.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'seg' (1#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v:23]
+	Parameter Rtype bound to: 6'b000000 
+	Parameter addi bound to: 6'b001000 
+	Parameter andi bound to: 6'b001100 
+	Parameter ori bound to: 6'b001101 
+	Parameter xori bound to: 6'b001110 
+	Parameter slti bound to: 6'b001010 
+	Parameter lw bound to: 6'b100011 
+	Parameter sw bound to: 6'b101011 
+	Parameter beq bound to: 6'b000100 
+	Parameter bne bound to: 6'b000101 
+	Parameter j bound to: 6'b000010 
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+	Parameter S3 bound to: 5'b00011 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+	Parameter S10 bound to: 5'b01010 
+	Parameter S11 bound to: 5'b01011 
+	Parameter S12 bound to: 5'b01100 
+	Parameter S13 bound to: 5'b01101 
+	Parameter S14 bound to: 5'b01110 
+	Parameter S15 bound to: 5'b01111 
+	Parameter S16 bound to: 5'b10000 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'next_PC' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/PC.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'next_PC' (3#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC1' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/PC1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC1' (4#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/PC1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/MEM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (5#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/MEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cache_control' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:23]
+	Parameter start bound to: 4'b0000 
+	Parameter WaitforSignal bound to: 4'b0001 
+	Parameter ReadHit bound to: 4'b0010 
+	Parameter ReadMiss_1 bound to: 4'b0011 
+	Parameter ReadMiss_2 bound to: 4'b0110 
+	Parameter WriteHit bound to: 4'b0100 
+	Parameter WriteMiss bound to: 4'b0101 
+	Parameter ReadReturn bound to: 4'b0111 
+	Parameter WriteReturn bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:80]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:127]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:162]
+INFO: [Synth 8-6157] synthesizing module 'cache_memory_module' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache_memory_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/synth_1/.Xil/Vivado-652-MSI/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (6#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/synth_1/.Xil/Vivado-652-MSI/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cache_memory_module' (7#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache_memory_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cache_control' (8#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IRnMDR' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/IRnMDR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IRnMDR' (9#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/IRnMDR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'con_IR_RF' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/con_IR_RF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'con_IR_RF' (10#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/con_IR_RF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/RF.v:22]
+	Parameter reg_num bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RF' (11#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/RF.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RFout_AB' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/RFout_AB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RFout_AB' (12#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/RFout_AB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_control' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_control' (13#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Operands' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_Operands.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Operands' (14#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_Operands.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (15#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU_out' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_out' (16#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_out.v:23]
+WARNING: [Synth 8-6104] Input port 'clk' has an internal driver [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cpu.v:221]
+INFO: [Synth 8-6157] synthesizing module 'DCU' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/DCU.v:23]
+	Parameter H_Total bound to: 1040 - type: integer 
+	Parameter H_Sync_start bound to: 542 - type: integer 
+	Parameter H_Sync_end bound to: 661 - type: integer 
+	Parameter H_board_start bound to: 0 - type: integer 
+	Parameter H_board_end bound to: 170 - type: integer 
+	Parameter V_Total bound to: 666 - type: integer 
+	Parameter V_Sync_start bound to: 383 - type: integer 
+	Parameter V_Sync_end bound to: 388 - type: integer 
+	Parameter V_board_start bound to: 0 - type: integer 
+	Parameter V_board_end bound to: 90 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DCU' (17#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/DCU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_word' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/display_word.v:23]
+	Parameter OP bound to: 2'b00 
+	Parameter RD bound to: 2'b01 
+	Parameter RS bound to: 2'b10 
+	Parameter RT bound to: 2'b11 
+	Parameter ADD bound to: 3'b000 
+	Parameter LW bound to: 3'b001 
+	Parameter SW bound to: 3'b010 
+	Parameter SPACE bound to: 6'b111110 
+	Parameter A bound to: 6'b001010 
+	Parameter D bound to: 6'b001101 
+	Parameter DOLLAR bound to: 6'b111111 
+	Parameter T bound to: 6'b011101 
+	Parameter ZERO bound to: 6'b000000 
+	Parameter S bound to: 6'b011100 
+	Parameter ONE bound to: 6'b000001 
+	Parameter TWO bound to: 6'b000010 
+	Parameter L bound to: 6'b010101 
+	Parameter W bound to: 6'b100000 
+	Parameter THREE bound to: 6'b000011 
+	Parameter FOUR bound to: 6'b000100 
+	Parameter FIVE bound to: 6'b000101 
+	Parameter SIX bound to: 6'b000110 
+	Parameter SEVEN bound to: 6'b000111 
+	Parameter EIGHT bound to: 6'b001000 
+	Parameter NINE bound to: 6'b001001 
+INFO: [Synth 8-6157] synthesizing module 'word_dictionary' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/word_dictionary.v:23]
+	Parameter SPACE bound to: 6'b111110 
+	Parameter A bound to: 6'b001010 
+	Parameter D bound to: 6'b001101 
+	Parameter DOLLAR bound to: 6'b111111 
+	Parameter T bound to: 6'b011101 
+	Parameter ZERO bound to: 6'b000000 
+	Parameter S bound to: 6'b011100 
+	Parameter ONE bound to: 6'b000001 
+	Parameter TWO bound to: 6'b000010 
+	Parameter L bound to: 6'b010101 
+	Parameter W bound to: 6'b100000 
+	Parameter THREE bound to: 6'b000011 
+	Parameter FOUR bound to: 6'b000100 
+	Parameter FIVE bound to: 6'b000101 
+	Parameter SIX bound to: 6'b000110 
+	Parameter SEVEN bound to: 6'b000111 
+	Parameter EIGHT bound to: 6'b001000 
+	Parameter NINE bound to: 6'b001001 
+INFO: [Synth 8-226] default block is never used [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/word_dictionary.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'word_dictionary' (18#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/word_dictionary.v:23]
+INFO: [Synth 8-226] default block is never used [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/display_word.v:195]
+INFO: [Synth 8-226] default block is never used [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/display_word.v:204]
+INFO: [Synth 8-6157] synthesizing module 'cur_data' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cur_data.v:23]
+WARNING: [Synth 8-5788] Register col7_reg in module cur_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cur_data.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'cur_data' (19#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cur_data.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_word' (20#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/display_word.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (21#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cpu.v:23]
+WARNING: [Synth 8-5788] Register led_reg in module DDU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/DDU.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'DDU' (22#1) [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/DDU.v:23]
+WARNING: [Synth 8-3331] design display_word has unconnected port x_cnt[11]
+WARNING: [Synth 8-3331] design display_word has unconnected port y_cnt[11]
+WARNING: [Synth 8-3331] design MEM has unconnected port PC[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port PC[0]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALUout[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALUout[0]
+WARNING: [Synth 8-3331] design seg has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 457.855 ; gain = 169.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 457.855 ; gain = 169.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 457.855 ; gain = 169.688
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu_dut/CACHE/cache_dut/mem_cache'
+Finished Parsing XDC File [f:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu_dut/CACHE/cache_dut/mem_cache'
+Parsing XDC File [f:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu_dut/CACHE/cache_control_mem'
+Finished Parsing XDC File [f:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu_dut/CACHE/cache_control_mem'
+Parsing XDC File [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/constrs_1/imports/lab5/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/constrs_1/imports/lab5/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/constrs_1/imports/lab5/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DDU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DDU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 817.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cpu_dut/CACHE/cache_control_mem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu_dut/CACHE/cache_dut/mem_cache. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'control_unit'
+INFO: [Synth 8-5546] ROM "PCSource" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWriteCond" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lorD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IRWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "isbne" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cache_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cache_control'
+INFO: [Synth 8-5544] ROM "tag_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tag_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "datatocpu" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_read_mem_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "RF_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUoperation" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Line0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Line0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "current_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v:83]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                            00000 |                            00000
+                      S1 |                            00001 |                            00001
+                      S2 |                            00010 |                            00010
+                     S11 |                            00011 |                            01011
+                     S15 |                            00100 |                            01111
+                     S12 |                            00101 |                            01100
+                      S3 |                            00110 |                            00011
+                      S4 |                            00111 |                            00100
+                      S5 |                            01000 |                            00101
+                      S6 |                            01001 |                            00110
+                      S7 |                            01010 |                            00111
+                     S13 |                            01011 |                            01101
+                      S8 |                            01100 |                            01000
+                     S14 |                            01101 |                            01110
+                      S9 |                            01110 |                            01001
+                     S10 |                            01111 |                            01010
+                     S16 |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'control_unit'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'next_pc_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/PC.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'datatocpu_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:175]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:128]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                        000000001 |                             0000
+           WaitforSignal |                        000000010 |                             0001
+                WriteHit |                        000000100 |                             0100
+               WriteMiss |                        000001000 |                             0101
+             WriteReturn |                        000010000 |                             1000
+                 ReadHit |                        000100000 |                             0010
+              ReadMiss_1 |                        001000000 |                             0011
+              ReadMiss_2 |                        010000000 |                             0110
+              ReadReturn |                        100000000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cache_control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[0]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[1]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[2]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[3]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[4]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[5]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[6]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'tag_reg[7]' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'available_bit_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:180]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_we_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:169]
+WARNING: [Synth 8-327] inferring latch for variable 'cache_addr_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:173]
+WARNING: [Synth 8-327] inferring latch for variable 'cache_we_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:168]
+WARNING: [Synth 8-327] inferring latch for variable 'cache_read_mem_addr_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:181]
+WARNING: [Synth 8-327] inferring latch for variable 'cpuwrite_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:170]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUoperation_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'instruction_reg' [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/display_word.v:92]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 10    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 8     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               33 Bit    Registers := 32    
+	               32 Bit    Registers := 26    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                6 Bit    Registers := 201   
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 2     
+	  19 Input      9 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 57    
+	   4 Input      8 Bit        Muxes := 8     
+	  39 Input      8 Bit        Muxes := 1     
+	  39 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 56    
+	   8 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 12    
+	  17 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 15    
+	  10 Input      5 Bit        Muxes := 1     
+	  39 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	  39 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 86    
+	   5 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 17    
+	   9 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DDU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  10 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module next_PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module PC1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+Module cache_memory_module 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+Module cache_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	  19 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 56    
+	   4 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   3 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 16    
+	   9 Input      1 Bit        Muxes := 2     
+Module IRnMDR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module con_IR_RF 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module RFout_AB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module ALU_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module ALU_Operands 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+Module ALU_out 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DCU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module cur_data 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 8     
++---Muxes : 
+	  39 Input      8 Bit        Muxes := 1     
+	  39 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	  39 Input      5 Bit        Muxes := 1     
+	  39 Input      3 Bit        Muxes := 1     
+Module display_word 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 201   
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 54    
+	   4 Input      6 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 12    
+	   3 Input      5 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 8     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 9     
+Module cpu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "dcu_dut/y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design display_word has unconnected port x_cnt[11]
+WARNING: [Synth 8-3331] design display_word has unconnected port y_cnt[11]
+WARNING: [Synth 8-3331] design seg has unconnected port rst
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/cache_read_mem_addr_reg[6]' (LD) to 'cpu_dut/CACHE/cache_read_mem_addr_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\cache_read_mem_addr_reg[7] )
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[7][3]' (LD) to 'cpu_dut/CACHE/tag_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[6][3]' (LD) to 'cpu_dut/CACHE/tag_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[5][3]' (LD) to 'cpu_dut/CACHE/tag_reg[5][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[4][3]' (LD) to 'cpu_dut/CACHE/tag_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[3][3]' (LD) to 'cpu_dut/CACHE/tag_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[2][3]' (LD) to 'cpu_dut/CACHE/tag_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[1][3]' (LD) to 'cpu_dut/CACHE/tag_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/CACHE/tag_reg[0][3]' (LD) to 'cpu_dut/CACHE/tag_reg[0][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/CACHE/\tag_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line8_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line7_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line6_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line5_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line4_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line3_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line2_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line1_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[17][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[15][5] )
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[14][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[14][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[13][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[13][4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[12][5] )
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[11][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[11][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[10][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[10][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[9][5]' (FDPE) to 'cpu_dut/display_word_dut/Line0_reg[9][4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[8][5] )
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[7][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[6][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[6][4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[5][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[4][5] )
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[3][5]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[3][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_dut/display_word_dut/\Line0_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line0_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[19][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[18][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[17][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[16][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[15][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[8][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu_dut/display_word_dut/\Line9_reg[0][3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[9][3]' (FDPE) to 'cpu_dut/display_word_dut/Line0_reg[9][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[3][3]' (FDPE) to 'cpu_dut/display_word_dut/Line0_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[2][3]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line2_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line2_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line1_reg[3][1]' (FDPE) to 'cpu_dut/display_word_dut/Line1_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[9][1]' (FDPE) to 'cpu_dut/display_word_dut/Line0_reg[9][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[3][1]' (FDCPE) to 'cpu_dut/display_word_dut/Line0_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line0_reg[2][1]' (FDCE) to 'cpu_dut/display_word_dut/Line0_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line9_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line9_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line8_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line8_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line7_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line7_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line6_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line6_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line5_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line5_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line4_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line4_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[7][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[6][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[3][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line3_reg[2][4]' (FDPE) to 'cpu_dut/display_word_dut/Line3_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line2_reg[14][4]' (FDPE) to 'cpu_dut/display_word_dut/Line2_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line2_reg[13][4]' (FDPE) to 'cpu_dut/display_word_dut/Line2_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line2_reg[11][4]' (FDPE) to 'cpu_dut/display_word_dut/Line2_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line2_reg[10][4]' (FDPE) to 'cpu_dut/display_word_dut/Line2_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'cpu_dut/display_word_dut/Line2_reg[9][4]' (FDPE) to 'cpu_dut/display_word_dut/Line2_reg[9][1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[0][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[1][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[2][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[3][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[4][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[5][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[6][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (tag_reg[7][4]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (cache_read_mem_addr_reg[7]) is unused and will be removed from module cache_control.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[0][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[1][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[2][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[3][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[4][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[5][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[6][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[7][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[8][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[9][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[10][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[11][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[12][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[13][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[14][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[15][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[16][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[17][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[18][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[19][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[20][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[21][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[22][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[23][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[24][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[25][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[26][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[27][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[28][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[29][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[30][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (RF_reg[31][32]) is unused and will be removed from module RF.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[30]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[0][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[0][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[0][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[0][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[0][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[0][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[1][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[2][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[3][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[4][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[4][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[4][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[4][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[4][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[4][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[5][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[5][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[5][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[5][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[5][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[5][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[6][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[8][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[8][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[8][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[8][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[8][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[8][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (op_reg[2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[9][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[10][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[12][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[12][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[12][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[12][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[12][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[12][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[13][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[15][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[15][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[15][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[15][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[15][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[15][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[16][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[16][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[16][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[16][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[16][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[16][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[17][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[17][4]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[17][3]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[17][2]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[17][1]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[17][0]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[18][5]) is unused and will be removed from module display_word.
+WARNING: [Synth 8-3332] Sequential element (Line0_reg[18][4]) is unused and will be removed from module display_word.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+-------------------------+---------------+----------------+
+|Module Name     | RTL Object              | Depth x Width | Implemented As | 
++----------------+-------------------------+---------------+----------------+
+|word_dictionary | display_figure          | 32x10         | LUT            | 
+|cur_data        | col1                    | 64x7          | LUT            | 
+|cur_data        | col4                    | 64x8          | LUT            | 
+|cur_data        | col5                    | 64x8          | LUT            | 
+|cur_data        | col7                    | 64x1          | LUT            | 
+|cur_data        | col7                    | 64x8          | LUT            | 
+|display_word    | dic_dut0/display_figure | 32x10         | LUT            | 
+|display_word    | dic_dut1/display_figure | 32x10         | LUT            | 
+|display_word    | dic_dut2/display_figure | 32x10         | LUT            | 
+|display_word    | dic_dut3/display_figure | 32x10         | LUT            | 
+|display_word    | dic_dut4/display_figure | 32x10         | LUT            | 
+|display_word    | dic_dut5/display_figure | 32x10         | LUT            | 
+|display_word    | cur_data_dut/col7       | 64x1          | LUT            | 
+|display_word    | cur_data_dut/col1       | 64x7          | LUT            | 
+|display_word    | cur_data_dut/col4       | 64x8          | LUT            | 
+|display_word    | cur_data_dut/col5       | 64x8          | LUT            | 
+|display_word    | cur_data_dut/col7       | 64x8          | LUT            | 
++----------------+-------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 817.332 ; gain = 529.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.srcs/sources_1/new/cache.v:180]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         2|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |dist_mem_gen_0    |     1|
+|2     |dist_mem_gen_0__1 |     1|
+|3     |BUFG              |    11|
+|4     |CARRY4            |    63|
+|5     |LUT1              |    13|
+|6     |LUT2              |   120|
+|7     |LUT3              |   369|
+|8     |LUT4              |   304|
+|9     |LUT5              |   389|
+|10    |LUT6              |  1773|
+|11    |MUXF7             |   454|
+|12    |MUXF8             |    17|
+|13    |FDCE              |  2138|
+|14    |FDPE              |   322|
+|15    |FDRE              |    79|
+|16    |LD                |   150|
+|17    |LDC               |    63|
+|18    |IBUF              |    12|
+|19    |OBUF              |    45|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------+------+
+|      |Instance             |Module              |Cells |
++------+---------------------+--------------------+------+
+|1     |top                  |                    |  6450|
+|2     |  cpu_dut            |cpu                 |  5929|
+|3     |    AB_dut           |RFout_AB            |   150|
+|4     |    ALU_control_dut  |ALU_control         |    37|
+|5     |    ALU_out_dut      |ALU_out             |    32|
+|6     |    CACHE            |cache_control       |  1469|
+|7     |      cache_dut      |cache_memory_module |   816|
+|8     |    IRnMDR_dut       |IRnMDR              |   195|
+|9     |    PC_dut           |PC1                 |    48|
+|10    |    RF_dut           |RF                  |  2272|
+|11    |    alu_dut          |ALU                 |   125|
+|12    |    cu               |control_unit        |   146|
+|13    |    dcu_dut          |DCU                 |   156|
+|14    |    display_word_dut |display_word        |  1290|
+|15    |      cur_data_dut   |cur_data            |   118|
+|16    |  seg_dut            |seg                 |    21|
++------+---------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 883.887 ; gain = 595.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 731 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 883.887 ; gain = 236.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 883.887 ; gain = 595.719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 759 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 213 instances were transformed.
+  LD => LDCE: 150 instances
+  LDC => LDCE: 63 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+387 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 883.887 ; gain = 607.184
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/synth_1/DDU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DDU_utilization_synth.rpt -pb DDU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 883.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 20:34:50 2019...

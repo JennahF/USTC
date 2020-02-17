@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 26 20:16:48 2019
+# Process ID: 14004
+# Current directory: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15184
+# Log file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VIVADO_Project/COD/VGA/VGA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 821.012 ; gain = 91.434
+update_compile_order -fileset sources_1
+archive_project D:/VIVADO_Project/COD/VGA.xpr.zip -temp_dir C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14004-LAPTOP-NVHH3IQN -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14004-LAPTOP-NVHH3IQN' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14004-LAPTOP-NVHH3IQN/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'dist_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'dist_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'dist_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'dist_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jun  1 16:14:12 2019
+# Process ID: 7916
+# Current directory: F:/COD/lab6/MUL_MIPS_CPU_cache
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2524 F:\COD\lab6\MUL_MIPS_CPU_cache\MUL_MIPS_CPU.xpr
+# Log file: F:/COD/lab6/MUL_MIPS_CPU_cache/vivado.log
+# Journal file: F:/COD/lab6/MUL_MIPS_CPU_cache\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 741.246 ; gain = 61.922
+update_compile_order -fileset sources_1

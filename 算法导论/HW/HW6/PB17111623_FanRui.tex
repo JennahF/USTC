@@ -1,0 +1,131 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}
+\graphicspath{{img/}} 
+\title{Homework\ 6}
+\author{PB17111623}
+\author{PB17111623 范睿}
+\date{\today}
+\usepackage[a4paper,bottom=3.5cm]{geometry}
+\usepackage{algorithm}  
+\usepackage{algorithmicx}
+\usepackage{amsmath}  
+\usepackage{algpseudocode}  %算法的包
+\usepackage{amssymb}
+\begin{document}
+\maketitle
+\section{}
+\subsection{假设我们希望记录一个区间集合的最大重叠点，即被最多数目区间所覆盖的那个点。}
+\subsubsection{a. 证明：最大重叠点一定是其中一个区间的端点}
+证明：\\
+若最大重叠点A不是任何一个区间的端点，那么一定可以找到距离此点最近的任何一个区间的端点B。B的区间重叠数$\geq$A的区间重叠数。所以B为最大重叠点。所以最大重叠点一定是其中一个区间的端点。
+\subsubsection{b. 设计一个数据结构，使得它能够有效地支持 INTERVAL-INSERT、INTERVAL-DELETE, 以及
+返回最大重叠点的 FIND-POM 操作。}
+在区间树的基础上做一些操作：\\
+区间树结点包含：$key$（区间左端点）、$max$（此节点带领的树的最右端）、$i$(区间值)、$left$(左子树指针)、$right$(右子树指针)、$parent$(父节点指针)。\\\\
+增加一项$<degree, intervals>$。$intervals$记录若干个区间，这些区间内所有的点都是此结点带领的树的最大重叠区间，$intervals$记录他们的最大区间重叠数。\\
+每个叶结点的$degree$为$1$，$intervals$中只有一个区间，与此叶节点的区间值相同。\\
+确定除了叶结点的所有其他结点的$degree$和$intervals$(下一页)：\\
+\begin{algorithm}
+	\caption{计算degree和intervals}
+	\begin{algorithmic}[1]%显示行号
+	\Require 非叶结点p
+	\If{$p->left->degree\ >\ p->right->degree$}
+		\For {$i\ in\ p->left->intervals$}
+			\If{$Overlap(i, p->i)$} 
+				\State{$//add\ Overlap(i, p->i)\ into\ p->intervals$}
+				\State{$//p->degree\ \gets \ p->left->degree+1$}
+			\EndIf
+		\EndFor
+		\If{$p->intervals\ has\ nothing$}
+			\If{$p->left->degree\ ==\ p->right->degree+1$}
+				\For {$i\ in p->right->intervals$}
+					\If{$Overlap(i, p->i)$} 
+						\State{$//add\ Overlap(i, p->i)\ into\ p->intervals$}
+						\State{$//p->degree\ \gets \ p->right->degree+1$}
+					\EndIf
+				\EndFor
+				\State{$p->intervals \gets p->intervals \cup p->left->intervals$}
+			\Else
+				\State{$p->intervals \gets p->left->intervals$}
+				\State{$p->degree \gets p->left->degree$}
+			\EndIf
+		\EndIf
+	\ElsIf {$p->left->degree\ <\ p->right->degree$}
+		\State{//Like\ Above}
+	\Else
+		\For {$i\ in\ p->left->intervals\cup p->right->intervals$}
+			\If{$Overlap(i, p->i)$} 
+				\State{$//add\ Overlap(i, p->i)\ into\ p->intervals$}
+				\State{$//p->degree\ \gets \ p->left->degree+1$}
+			\EndIf
+		\EndFor
+		\If {$p->intervals\ has\ nothing$}
+			\State{$p->intervals \gets p->left->intervals \cup p->right->intervals$}
+			\State{$p->degree \gets p->left->degree+1$}
+		\EndIf
+	\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+时间复杂度分析：\\
+INTERVAL-INSERT、INTERVAL-DELETE的时间复杂度与区间树相同，为$\mathcal{O}(\log n)$\\
+FIND-POM时间复杂度为$\mathcal{O}(1)$
+
+\subsection{}
+\subsubsection{a. 该教授的声称是基于第 8 行可以在 O(1) 实际时间完成的这一假设，它的程序可以运行的更快。
+该假设有什么问题吗}
+把x的所有孩子加入链表需要将x的所有孩子的parent指针改为NIL，实际上需要$\mathcal{O}(x.degree)$的时间。
+\subsubsection{当x不是由H.min指向时,给出PISANO-DELETE实际时间的一个好（紧凑）上界。你给出的上界应该以 x.degree 和调用 CASCADING-CUT 的次数 c 这两个参数来表示。}
+$\mathcal{O}(c+x.degree)$
+
+\subsection{使用链表表示和加权合并启发式策略，写出 MAKE-SET, FIND-SET 和 UNION 操作的伪代码。}
+
+\begin{algorithm}
+	\caption{MAKE-SET}
+	\begin{algorithmic}[1]%显示行号
+	\Require 数字x
+	\Ensure 只包含x的集合S
+	\State{$N.key \gets x$}
+	\State{$N.next \gets NULL$}
+	\State{$N.set \gets S$}
+	\State{$S.head \gets N$}
+	\State{$S.tail \gets N$}
+	\State{$S.num \gets 1$}\\
+	\Return {$S$}
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{FIND-SET}
+	\begin{algorithmic}[1]%显示行号
+	\Require 结点x
+	\Ensure 包含x结点的唯一集合S\\
+	\Return {$x.set$}
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{UNION}
+	\begin{algorithmic}[1]%显示行号
+	\Require 结点x，y
+	\State{$Sx \gets x.set$}
+	\State{$Sy \gets y.set$}
+	\If{$Sx.num \leq Sy.num$}
+		\State{$Sy.tail.next \gets Sx.head$}
+		\State{$Sy.tail \gets Sx.tail$}
+		\For{$i\ in\ linklist\ Sx.head$}
+			\State{$i.set \gets Sy$}
+		\EndFor
+		\State{$Sy.num\ +=\ Sx.num$}
+	\Else
+		\State{$Sx.tail.next \gets Sy.head$}
+		\State{$Sx.tail \gets Sy.tail$}
+		\For{$i\ in\ linklist\ Sy.head$}
+			\State{$i.set \gets Sx$}
+		\EndFor
+		\State{$Sx.num\ +=\ Sy.num$}
+	\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+\end{document}

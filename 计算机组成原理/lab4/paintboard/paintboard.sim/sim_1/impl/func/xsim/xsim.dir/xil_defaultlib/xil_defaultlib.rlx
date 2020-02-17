@@ -1,0 +1,6 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/COD/lab4/paintboard/paintboard.sim/sim_1/impl/func/xsim/board_sim_func_impl.v,1556191630,verilog,,F:/COD/lab4/paintboard/paintboard.srcs/sim_1/new/board_sim.v,,DCU;PCU;board_top;dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_12;dist_mem_gen_0_dist_mem_gen_v8_0_12_synth;dist_mem_gen_0_sdpram;glbl,,,../../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_1,,,,,
+F:/COD/lab4/paintboard/paintboard.srcs/sim_1/new/board_sim.v,1556010622,verilog,,,,board_sim,,,../../../../../paintboard.srcs/sources_1/ip/clk_wiz_0_1,,,,,

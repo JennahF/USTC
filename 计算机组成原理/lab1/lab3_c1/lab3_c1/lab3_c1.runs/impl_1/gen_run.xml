@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553306736">
+  <File Type="BITSTR-BMM" Name="FIB_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FIB_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="FIB_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="FIB_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FIB.tcl"/>
+  <File Type="OPT-TIMING" Name="FIB_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FIB_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="FIB_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FIB_reports.tcl"/>
+  <File Type="OPT-DRC" Name="FIB_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FIB.hwdef"/>
+  <File Type="PWROPT-DCP" Name="FIB_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FIB_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="FIB_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FIB_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FIB_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FIB_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FIB_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FIB_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FIB_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FIB_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FIB_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="FIB.bgn"/>
+  <File Type="PLACE-TIMING" Name="FIB_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FIB_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="FIB.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FIB_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FIB_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FIB_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="FIB.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="FIB_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FIB_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="FIB_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FIB_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="FIB_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FIB_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FIB.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="FIB_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="FIB.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FIB_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FIB_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="FIB.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FIB_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FIB_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FIB_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FIB_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FIB_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FIB_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FIB_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="FIB_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="FIB_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FIB_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FIB_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FIB_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FIB_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FIB_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FIB_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FIB_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FIB_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FIB_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FIB_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="FIB.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FIB_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="FIB.rbt"/>
+  <File Type="BITSTR-NKY" Name="FIB.nky"/>
+  <File Type="BG-DRC" Name="FIB.drc"/>
+  <File Type="RDI-RDI" Name="FIB.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FIB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FIB"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/XXX.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

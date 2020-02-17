@@ -1,0 +1,141 @@
+INCLUDE Irvine16.inc
+INCLUDELIB Irvine16.lib
+INCLUDE macros.inc
+
+.data
+X    DW ?
+A1   DW ?
+A2   DW ?
+A3   DW ?
+ZERO DW 0
+TEMP REAL8 ?
+MINUSFLAG DB 0
+XMINUSFLAG DB 0
+ERRORINFO DB "Error: x<0!",'$'
+
+.code
+INPUTINT proc near
+    MOV DX, 0
+    MOV MINUSFLAG, 0
+readnum:
+    MOV	AH, 1		;输入并回显
+    INT	21H
+    CMP AL, ' '     ;遇到空格停止读入
+    JZ OUTP
+    CMP AL, 0DH     ;遇到回车停止读入
+    JZ OUTP
+    CMP AL, '-'
+    JNZ CALNEXTP
+    MOV MINUSFLAG, 1
+    JMP readnum
+CALNEXTP:
+    SUB AL, 30H
+    MOV AH, 0
+    PUSH AX
+    MOV AX, 10
+    MUL DX
+    MOV DX, AX
+    POP AX
+    ADD DX, AX
+    JMP readnum
+
+OUTP:
+    RET
+INPUTINT ENDP
+
+MAIN proc
+    MOV AX, @data
+    MOV DS, AX
+    finit
+
+    CALL INPUTINT
+    CMP MINUSFLAG, 1
+    JNZ MOVE1
+    MOV XMINUSFLAG, 1
+    NEG DX
+MOVE1:
+    MOV X, DX
+
+    CALL INPUTINT 
+    CMP MINUSFLAG, 1
+    JNZ MOVE2
+    NEG DX
+MOVE2:
+    MOV A1, DX
+
+    CALL INPUTINT
+    CMP MINUSFLAG, 1
+    JNZ MOVE3
+    NEG DX
+MOVE3:
+    MOV A2, DX
+
+    CALL INPUTINT
+    CMP MINUSFLAG, 1
+    JNZ MOVE4
+    NEG DX
+MOVE4:
+    MOV A3, DX
+
+
+    CMP XMINUSFLAG, 1
+    JNZ CALNEXT
+    MOV AH, 09H
+    LEA DX, ERRORINFO
+    INT 21H
+    JMP EXIT1
+CALNEXT:
+    MOV MINUSFLAG, 0
+    FILD X
+    FSQRT
+    CMP A1, 1000H
+    JB CALNEXT1
+    MOV MINUSFLAG, 1
+    NEG A1
+CALNEXT1:
+    FIMUL A1
+    CMP MINUSFLAG, 1
+    JNZ POP1
+    FISUBR ZERO
+POP1:
+    FST TEMP
+
+    MOV MINUSFLAG, 0
+    CMP A2, 1000H
+    JB CALNEXT2
+    MOV MINUSFLAG, 1
+    NEG A2
+CALNEXT2:
+    FILD A2
+    FILD X
+    FYL2X
+    CMP MINUSFLAG, 1
+    JNZ POP2
+    FISUBR ZERO
+POP2:
+    FLD TEMP
+    FADD
+    FST TEMP
+    
+    MOV MINUSFLAG, 0
+    CMP A3, 1000H
+    JB CALNEXT3
+    MOV MINUSFLAG, 1
+    NEG A3
+CALNEXT3:
+    FILD X
+    FSIN
+    FIMUL A3
+    CMP MINUSFLAG, 1
+    JNZ POP3
+    FISUBR ZERO
+POP3:
+    FLD TEMP
+    FADD
+
+    call WriteFloat
+    call Crlf
+EXIT1:
+    exit
+MAIN ENDP
+END MAIN

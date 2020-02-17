@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build OJcomp",
+        "type": "shell",
+        "command": "g++",
+        "args": ["-g", "-o", "OJcomp", "OJcomp.c"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }

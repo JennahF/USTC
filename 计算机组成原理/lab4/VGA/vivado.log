@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 26 20:21:47 2019
+# Process ID: 8792
+# Current directory: F:/COD/lab4/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6996 F:\COD\lab4\VGA\VGA.xpr
+# Log file: F:/COD/lab4/VGA/vivado.log
+# Journal file: F:/COD/lab4/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab4/VGA/VGA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14004-LAPTOP-NVHH3IQN/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:nexys4_ddr:part0:1.1' used to customize the IP 'clk_wiz_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 737.016 ; gain = 64.586
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 20:58:50 2019...

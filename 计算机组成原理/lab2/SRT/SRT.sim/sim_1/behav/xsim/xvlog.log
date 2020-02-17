@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab2/SRT/SRT.srcs/sources_1/new/RST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RST
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab2/SRT/SRT.srcs/sim_1/new/SRT_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SRT_sim

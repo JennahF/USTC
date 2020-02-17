@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/VGA/VGA.srcs/sources_1/new/in_pro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module in_pro
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/VGA/VGA.srcs/sim_1/new/in_pro_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module in_pro_tb

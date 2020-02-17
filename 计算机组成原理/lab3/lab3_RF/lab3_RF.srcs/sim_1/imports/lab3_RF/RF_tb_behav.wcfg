@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RF_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RF_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="158730160fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="97"></NameColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/RF_tb/ra0" type="array">
+      <obj_property name="ElementShortName">ra0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ra0[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/ra1" type="array">
+      <obj_property name="ElementShortName">ra1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ra1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/wa" type="array">
+      <obj_property name="ElementShortName">wa[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wa[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/wd" type="array">
+      <obj_property name="ElementShortName">wd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/rd0" type="array">
+      <obj_property name="ElementShortName">rd0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rd0[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/rd1" type="array">
+      <obj_property name="ElementShortName">rd1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RF_tb/DUT/RF" type="array">
+      <obj_property name="ElementShortName">RF[7:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">RF[7:0][2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

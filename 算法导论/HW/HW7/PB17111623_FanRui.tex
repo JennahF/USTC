@@ -1,0 +1,124 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}
+\graphicspath{{img/}} 
+\title{Homework\ 7}
+\author{PB17111623}
+\author{PB17111623 范睿}
+\date{\today}
+\usepackage[a4paper,bottom=3.5cm]{geometry}
+\usepackage{algorithm}  
+\usepackage{algorithmicx}
+\usepackage{amsmath}  
+\usepackage{algpseudocode}  %算法的包
+\usepackage{amssymb}
+\begin{document}
+\maketitle
+\section{}
+\subsection{给定一个有向无环图G=(V,E),边权重为实数，给定图中两个顶点s和t。设计动态规划算法，求从s到t的最长加权简单路径。}
+设weight[s][t]为s与t间的最长加权路径的权重，有递归式：\\
+\begin{center}
+$weight[s][t]=\max\limits_{p\in s.S}(weight[p][t]+w[s][t])$
+\end{center}
+其中，s.S表示所有s指向的结点的集合，w[s][t]表示st这条边的边权。
+
+\begin{algorithm}
+	\caption{Weight}
+	\begin{algorithmic}[1]%显示行号
+	\Require 图G，顶点s，顶点t (weight数组初始均为-1)
+	\Ensure 最长边权w
+	\If{s is t}
+		\State{$weight[s][t]\gets 0$}\\
+		\Return 0
+	\EndIf
+	\For{$u \in V$}
+		\For{$v \in V$}
+			\For{$p\ \in\ V\ and\ pq\ \in E$}
+				\If{$weight[u][p]\ is\ -1$}
+					\State{$weight[u][p]\gets Weight(G,u,p)$}
+				\EndIf
+				\State{$weight[u][v]=\max(path[u][j], w[p][j]+weight[i][p])$}
+			\EndFor
+		\EndFor
+	\EndFor\\
+	\Return weight[s][t]
+	\end{algorithmic}
+\end{algorithm}
+
+
+\subsection{设定动态规划算法求解 0-1 背包问题，要求运行时间为 O(nW), n 为商品数量，W 是小偷能放进背
+包的最大商品总重量。}
+
+\begin{algorithm}
+	\caption{}
+	\begin{algorithmic}[1]%显示行号
+	\Require 商品数量n，最大重量W，每个商品的重量和价值$w_i,v_i,1\le i\le n$
+	\Ensure 最大价值
+	\State{let A[0...W][1...n+1] be a new array}
+	\For{i = 0 to W}
+		\State{$A[i][n+1] \gets 0$}
+	\EndFor
+	\For{i = n down to 1}
+		\For{j = 0 to W}
+			\State{$A[i][j] \gets 0$}
+			\If{$j < w_i$}
+				\State{$A[i][j] \gets A[i][j+1]$}
+			\Else
+				\State{$value \gets A[i-w_i][j+1]+v_j$}
+				\If{$value \ge A[i][j]$}
+					\State{$A[i][j] \gets value$}
+				\EndIf
+			\EndIf
+		\EndFor
+	\EndFor
+	\Return A[W][1]
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{一位公司主席正在向 Stewart 教授咨询公司聚会方案。公司的内部结构关系是层次化的，即员工按主管-下属关系构成一棵树，根结点为公司主席。人事部按“宴会交际能力”为每个员工打分，分值为实数。为了使所有参加聚会的员工都感到愉快，主席不希望员工及其直接主管同时出席。公司主席向 Stewart 教授提供公司结构树，采用左孩子右兄弟表示法（参见课本 10.4 节）描述。每个节点除了保存指针外，还保存员工的名字和宴会交际评分。设计算法，求宴会交际评分之和最大的宾客名单。分析算法复杂度。}
+寻找子结构：\\
+令score(T)表示以T为根的树的评分最大值，有递归式:\\
+\begin{center}
+$score(T) = max(T.score+\sum_{p\in T's grandson}score(p), \sum_{p\in T's children}score(p))$
+\end{center}
+
+\begin{algorithm}
+	\caption{}
+	\begin{algorithmic}[1]%显示行号
+	\Require 树T
+	\Ensure 最大评分scoremax
+	\State{将树T转换成堆的形式存在数组A[1...n]中,n为总人数}
+	\State{let B[1...n] be a new array}
+	\For{i = 1 to n}
+		\State{$B[i] \gets 0$}
+	\EndFor
+	\For{i = n downto 1}
+		\If{$lchild(i) > n$}
+			\State{$B[i] \gets score_i$}
+		\Else
+			\If{$grandson(i) > n$}
+				\State{$value \gets score_i+score_{rchild(i)}+score_{rchild(rchild(i))}...$}
+				\State{$B[i] \gets value>score_{lchild(i)}?value:score_{lchild(i)}$}
+			\Else
+				\State{$value1 \gets score_i+score_{lchild(lchild(i))}$}
+				\State{$value2 \gets score_{lchild(i)}$}
+				\State{$B[i] \gets value1>value2?value1:value2$}
+			\EndIf
+		\EndIf
+	\EndFor
+	\Return B[1]
+	\end{algorithmic}
+\end{algorithm}
+复杂度为$\mathcal{O}(n)$n为人数
+\subsection{. 设计一个高效的算法，对实数线上给定的一个点集 {x1, x2,...xn}, 求一个单位长度闭区间的集合，包含所有给定的点，并要求此集合最小。证明你的算法是正确的。}
+先找到最左边的点，将单位区间的左端点与之重合，用单位长度区间覆盖掉，然后把所有被覆盖掉的点去掉，再找最左边的点，重复，直到所有点全部被覆盖掉。
+证明是最小：\\
+1.最左边的点一定会被某一个区间覆盖\\
+2. 如果从最左边的点的左边开始放置区间，则会将区间左边点至最左边的区域浪费掉，有更优解，即提出算法。\\
+
+\subsection{考虑用最少的硬币找 n 美分零钱的问题。假定每种硬币的面额都是整数。设计贪心算法求解找零问题，假定有 25 美分、10 美分、5 美分和 1 美分四种面额的硬币。证明你的算法能找到最优解。}
+先找最多的25美分，再找最多的10美分，再找最多的5美分，剩下的全用1美分找。\\
+1. 同样价格的前，大面值美分的个数比小面值美分的个数少。
+2. 如果将本算法中的大面值用小面值替换，将会得到更多的硬币，不是最优解。
+
+
+\end{document}

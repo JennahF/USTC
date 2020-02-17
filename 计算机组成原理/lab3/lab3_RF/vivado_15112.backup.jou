@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 17 16:21:10 2019
+# Process ID: 15112
+# Current directory: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18780
+# Log file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VIVADO_Project/COD/lab3_RF/lab3_RF.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config D:/VIVADO_Project/COD/lab3_RF/RF_tb_behav.wcfg
+source test_tb.tcl
+current_wave_config {RF_tb_behav.wcfg}
+add_wave {{/test_tb/x}} 
+current_wave_config {RF_tb_behav.wcfg}
+add_wave {{/test_tb/sel}} 
+current_wave_config {RF_tb_behav.wcfg}
+add_wave {{/test_tb/clk}} 
+current_wave_config {RF_tb_behav.wcfg}
+add_wave {{/test_tb/rst}} 
+current_wave_config {RF_tb_behav.wcfg}
+add_wave {{/test_tb/DUT/a}} 
+relaunch_sim
+archive_project D:/VIVADO_Project/COD/lab3_RF.xpr.zip -temp_dir C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15112-LAPTOP-NVHH3IQN -force -include_local_ip_cache

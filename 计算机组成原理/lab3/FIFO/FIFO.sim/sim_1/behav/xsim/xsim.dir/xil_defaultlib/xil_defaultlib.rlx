@@ -1,0 +1,11 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+F:/COD/lab3/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v,1555031917,verilog,,,,FIFO_sim,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab3/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1554984723,verilog,,F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/FIFO.v,,clk_wiz_0,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab3/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1554984722,verilog,,F:/COD/lab3/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/FIFO.v,1555589779,verilog,,F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/rf1.v,,FIFO,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+,,,,F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/tube.v,,RF,,,,,,,,
+F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/tube.v,1555033144,verilog,,F:/COD/lab3/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v,,tube,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,

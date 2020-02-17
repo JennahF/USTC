@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 17 20:46:27 2019
+# Process ID: 13152
+# Current directory: F:/COD/lab3/FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1256 F:\COD\lab3\FIFO\FIFO.xpr
+# Log file: F:/COD/lab3/FIFO/vivado.log
+# Journal file: F:/COD/lab3/FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab3/FIFO/FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 782.211 ; gain = 92.520
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/rf1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/tube.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tube
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c65020a4bd7a44c5afc211b04db7bd3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 3 for port ra0 [F:/COD/lab3/FIFO/FIFO.srcs/sources_1/new/FIFO.v:211]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RF
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=31.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.tube
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_sim_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim/xsim.dir/FIFO_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 55.766 ; gain = 1.164
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 17 21:03:04 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 816.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/COD/lab3/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_sim_behav -key {Behavioral:sim_1:Functional:FIFO_sim} -tclbatch {FIFO_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source FIFO_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance FIFO_sim.L.clk1.inst.mmcm_adv_inst 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 824.762 ; gain = 7.773
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 848.539 ; gain = 12.648
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 17 22:15:17 2019...

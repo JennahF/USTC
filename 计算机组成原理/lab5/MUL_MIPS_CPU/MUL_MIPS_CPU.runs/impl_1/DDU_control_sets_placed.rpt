@@ -1,0 +1,137 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri May 24 23:55:12 2019
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DDU_control_sets_placed.rpt
+| Design       : DDU
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    69 |
+| Unused register locations in slices containing registers |   296 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           24 |
+|      6 |            2 |
+|     10 |            1 |
+|     12 |           32 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           25 |
+| No           | No                    | Yes                    |             274 |           60 |
+| No           | Yes                   | No                     |              16 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             512 |          128 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------------+-------------------------------------+-----------------------------+------------------+----------------+
+|                     Clock Signal                     |            Enable Signal            |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------------------------------+-------------------------------------+-----------------------------+------------------+----------------+
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[5]_P |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[1]_P                         |                                     | cpu_dut/PC_dut/led_reg[1]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[3]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[6]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[7]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[0]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[6]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[7]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[2]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[2]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[3]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[5]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[1]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[1]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[4]_P |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[0]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     | cpu_dut/PC_dut/led_reg[4]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[2]_P                         |                                     | cpu_dut/PC_dut/led_reg[2]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[7]_P                         |                                     | cpu_dut/PC_dut/led_reg[7]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[5]_P                         |                                     | cpu_dut/PC_dut/led_reg[5]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[0]_P                         |                                     | cpu_dut/PC_dut/led_reg[0]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[6]_P                         |                                     | cpu_dut/PC_dut/led_reg[6]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[3]_P                         |                                     | cpu_dut/PC_dut/led_reg[3]_C |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[4]_P                         |                                     | cpu_dut/PC_dut/led_reg[4]_C |                1 |              2 |
+|  seg_dut/CLK                                         |                                     |                             |                2 |              6 |
+|  cpu_dut/cu/E[0]                                     |                                     |                             |                1 |              6 |
+|  cpu_dut/cu/FSM_sequential_next_state_reg[4]_i_2_n_1 |                                     |                             |                2 |             10 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[1][5][0]  | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/E[0]             | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[17][5][0] | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[20][0][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[21][5][0] | rst_IBUF                    |                4 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[14][0][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[15][0][0] | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[23][5][0] | rst_IBUF                    |                5 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[24][5][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[0][0][0]  | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[13][5][0] | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[19][5][0] | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[11][5][0] | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[22][5][0] | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[12][0][0] | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[10][5][0] | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[16][5][0] | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[29][5][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[28][0][0] | rst_IBUF                    |                4 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[7][0][0]  | rst_IBUF                    |                5 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[3][5][0]  | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[6][0][0]  | rst_IBUF                    |                4 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[2][5][0]  | rst_IBUF                    |                3 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[31][5][0] | rst_IBUF                    |                5 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[9][5][0]  | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[25][5][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[5][5][0]  | rst_IBUF                    |                1 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[26][5][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[30][5][0] | rst_IBUF                    |                6 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[27][5][0] | rst_IBUF                    |                2 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[4][0][0]  | rst_IBUF                    |                4 |             12 |
+|  run_BUFG                                            | cpu_dut/IRnMDR_dut/RF_reg[8][0][0]  | rst_IBUF                    |                2 |             12 |
+|  seg_dut/CLK                                         |                                     | rst_IBUF                    |                3 |             16 |
+|  dec_IBUF_BUFG                                       |                                     | rst_IBUF                    |                4 |             26 |
+|  inc_IBUF_BUFG                                       |                                     | rst_IBUF                    |                4 |             26 |
+|  run_BUFG                                            | cpu_dut/cu/Instruction_reg[31][0]   | rst_IBUF                    |               28 |             64 |
+|  run_BUFG                                            | cpu_dut/cu/PC_reg[31][0]            | rst_IBUF                    |               15 |             64 |
+|  clk_100M_IBUF_BUFG                                  |                                     | rst_IBUF                    |               13 |             64 |
+|  n_0_723_BUFG                                        |                                     |                             |               20 |             64 |
+|  run_BUFG                                            |                                     | rst_IBUF                    |               20 |            110 |
+|  run_BUFG                                            | cpu_dut/cu/we                       |                             |               32 |            256 |
+|  run_BUFG                                            |                                     |                             |               32 |            256 |
++------------------------------------------------------+-------------------------------------+-----------------------------+------------------+----------------+
+
+

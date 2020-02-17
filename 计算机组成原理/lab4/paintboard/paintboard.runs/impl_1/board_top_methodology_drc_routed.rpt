@@ -1,0 +1,256 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr 26 21:38:33 2019
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_methodology -file board_top_methodology_drc_routed.rpt -pb board_top_methodology_drc_routed.pb -rpx board_top_methodology_drc_routed.rpx
+| Design       : board_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 44
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 32         |
+| TIMING-20 | Warning  | Non-clocked latch           | 12         |
++-----------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x1_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/x2_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y1_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin PCU_DUT/y2_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch PCU_DUT/l0/FSM_sequential_next_state0_reg[0] cannot be properly analyzed as its control pin PCU_DUT/l0/FSM_sequential_next_state0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch PCU_DUT/l0/FSM_sequential_next_state0_reg[1] cannot be properly analyzed as its control pin PCU_DUT/l0/FSM_sequential_next_state0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch PCU_DUT/l0/FSM_sequential_next_state0_reg[2] cannot be properly analyzed as its control pin PCU_DUT/l0/FSM_sequential_next_state0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch PCU_DUT/l1/FSM_sequential_next_state0_reg[0] cannot be properly analyzed as its control pin PCU_DUT/l1/FSM_sequential_next_state0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch PCU_DUT/l1/FSM_sequential_next_state0_reg[1] cannot be properly analyzed as its control pin PCU_DUT/l1/FSM_sequential_next_state0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch PCU_DUT/l1/FSM_sequential_next_state0_reg[2] cannot be properly analyzed as its control pin PCU_DUT/l1/FSM_sequential_next_state0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch PCU_DUT/l2/FSM_sequential_next_state0_reg[0] cannot be properly analyzed as its control pin PCU_DUT/l2/FSM_sequential_next_state0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch PCU_DUT/l2/FSM_sequential_next_state0_reg[1] cannot be properly analyzed as its control pin PCU_DUT/l2/FSM_sequential_next_state0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch PCU_DUT/l2/FSM_sequential_next_state0_reg[2] cannot be properly analyzed as its control pin PCU_DUT/l2/FSM_sequential_next_state0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch PCU_DUT/l3/FSM_sequential_next_state0_reg[0] cannot be properly analyzed as its control pin PCU_DUT/l3/FSM_sequential_next_state0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch PCU_DUT/l3/FSM_sequential_next_state0_reg[1] cannot be properly analyzed as its control pin PCU_DUT/l3/FSM_sequential_next_state0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch PCU_DUT/l3/FSM_sequential_next_state0_reg[2] cannot be properly analyzed as its control pin PCU_DUT/l3/FSM_sequential_next_state0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+

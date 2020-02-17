@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab4/paintboard/paintboard.sim/sim_1/synth/func/xsim/board_sim_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCU
+INFO: [VRFC 10-311] analyzing module PCU
+INFO: [VRFC 10-311] analyzing module board_top
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_12_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_sdpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab4/paintboard/paintboard.srcs/sim_1/new/board_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module board_sim

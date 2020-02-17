@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_2算数表达式求值", "2_2算数表达式求值\2_2算数表达式求值.vcxproj", "{B001B16E-555E-4D15-91D0-FA66C18AEA03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Debug|x64.ActiveCfg = Debug|x64
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Debug|x64.Build.0 = Debug|x64
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Debug|x86.ActiveCfg = Debug|Win32
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Debug|x86.Build.0 = Debug|Win32
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Release|x64.ActiveCfg = Release|x64
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Release|x64.Build.0 = Release|x64
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Release|x86.ActiveCfg = Release|Win32
+		{B001B16E-555E-4D15-91D0-FA66C18AEA03}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {766A0A7D-A38C-4FA8-B928-9CC920CFC4C0}
+	EndGlobalSection
+EndGlobal

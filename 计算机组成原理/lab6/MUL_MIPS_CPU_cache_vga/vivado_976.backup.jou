@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 31 18:54:58 2019
+# Process ID: 976
+# Current directory: F:/COD/lab6/MUL_MIPS_CPU_cache_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1232 F:\COD\lab6\MUL_MIPS_CPU_cache_vga\MUL_MIPS_CPU.xpr
+# Log file: F:/COD/lab6/MUL_MIPS_CPU_cache_vga/vivado.log
+# Journal file: F:/COD/lab6/MUL_MIPS_CPU_cache_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ddu_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/vga_write_addr}} 
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+relaunch_sim
+relaunch_sim
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/vga_write_addr_next}} 
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/reg_addr_ddu}} 
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/reg_data_ddu}} 
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/reg_data_ddu}} 
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/Instruction}} 
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/RF_dut/RF}} 
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run all
+restart
+run 500 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/current_state}} 
+restart
+run 600 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/IRnMDR_dut/Memery_data_register}} 
+restart
+run 600 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/IRnMDR_dut/MemData}} 
+restart
+run 600 ns
+relaunch_sim
+restart
+run 600 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/RF_dut/wd}} 
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/RF_dut/RF}} 
+restart
+run 600 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/PC}} 
+restart
+run 650 ns
+restart
+run 650 ns
+run 50 ns
+restart
+run 700 ns
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+restart
+run 700 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/MemData}} 
+restart
+run 700 ns
+restart
+run 700 ns
+run 50 ns
+run 50 ns
+relaunch_sim
+run 50 ns
+run 700 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/read}} 
+restart
+run 700 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/cache_dut/cache}} 
+restart
+run 700 ns
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/CACHE/cpudata}} 
+restart
+run 700 ns
+restart
+run 700 ns
+restart
+run 700 ns
+relaunch_sim
+run 700 ns
+restart
+run 700 ns
+relaunch_sim
+run 700 ns
+relaunch_sim
+restart
+run 700 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_wave_config {Untitled 1}
+add_wave {{/ddu_sim/ddu_dut/cpu_dut/IRnMDR_dut/ReadRegAddr_2}} 
+restart
+run 700 ns
+restart
+run 700 ns
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab6/MUL_MIPS_CPU_cache_vga/MUL_MIPS_CPU.runs/impl_1/DDU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cache_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source cache_sim.tcl
+restart
+run 700 ns
+restart
+run 700 ns
+restart
+restart
+run 700 ns
+restart
+run 700 ns
+close_sim
+close_sim

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/lab3_FIFO/lab3_FIFO.sim/sim_1/impl/func/xsim/FIFO_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb

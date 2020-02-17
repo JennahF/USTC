@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.sim/sim_1/synth/func/xsim/ddu_sim_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-311] analyzing module DDU
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module seg
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_12_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab5/MUL_MIPS_CPU/MUL_MIPS_CPU.srcs/sim_1/new/ddu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddu_sim

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 11 19:02:43 2019
+# Process ID: 12800
+# Current directory: F:/COD/lab2/DIV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12892 F:\COD\lab2\DIV\DIV.xpr
+# Log file: F:/COD/lab2/DIV/vivado.log
+# Journal file: F:/COD/lab2/DIV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab2/DIV/DIV.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 781.051 ; gain = 126.531
+update_compile_order -fileset sources_1
+archive_project F:/COD/lab2/DIV.xpr.zip -temp_dir F:/COD/lab2/DIV/.Xil/Vivado-12800-MSI -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'F:/COD/lab2/DIV/.Xil/Vivado-12800-MSI' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (F:/COD/lab2/DIV.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 824.625 ; gain = 33.922
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 19:03:59 2019...

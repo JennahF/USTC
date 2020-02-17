@@ -1,0 +1,45 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_12_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/ALU_Operands.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Operands
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/ALU_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/ALU_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/DDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/IRnMDR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IRnMDR
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module next_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/PC1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/RFout_AB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFout_AB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/cache_memory_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_memory_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/con_IR_RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module con_IR_RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.srcs/sources_1/new/ddusim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddu_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [F:/COD/lab6/MUL_MIPS_CPU_cache/MUL_MIPS_CPU.sim/sim_1/behav/xsim/glbl.v:6]

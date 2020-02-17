@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab1/lab3_c/FIB/FIB.srcs/sources_1/new/FIB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab1/lab3_c/FIB/FIB.srcs/sim_1/new/FIB_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIB_sim

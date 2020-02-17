@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../disp.srcs/sources_1/ip/c_counter_binary_0/sim/c_counter_binary_0.vhd" \
+
+nosort

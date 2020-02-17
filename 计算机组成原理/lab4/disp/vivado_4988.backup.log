@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr 22 18:47:55 2019
+# Process ID: 4988
+# Current directory: F:/COD/lab4/disp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11896 F:\COD\lab4\disp\disp.xpr
+# Log file: F:/COD/lab4/disp/vivado.log
+# Journal file: F:/COD/lab4/disp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab4/disp/disp.xpr
+INFO: [Project 1-313] Project file moved from 'E:/1Freeeee/msfiles/disp' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 828.977 ; gain = 147.461
+update_compile_order -fileset sources_1
+create_project paintboard F:/COD/lab4/paintboard -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 881.793 ; gain = 18.816
+file mkdir F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new
+close [ open F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/board_top.v w ]
+add_files F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/board_top.v
+add_files -fileset constrs_1 -norecurse F:/COD/lab4/paintboard/Nexys4DDR_Master.xdc
+update_compile_order -fileset sources_1
+close [ open F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/PCU.v w ]
+add_files F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/PCU.v
+update_compile_order -fileset sources_1
+close [ open F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/VRAM.v w ]
+add_files F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/VRAM.v
+update_compile_order -fileset sources_1
+close [ open F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/DCU.v w ]
+add_files F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/DCU.v
+update_compile_order -fileset sources_1
+current_project disp
+current_project paintboard
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_PHASE {5} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.000} CONFIG.MMCM_CLKOUT0_PHASE {5.000} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Mon Apr 22 21:03:07 2019] Launched clk_wiz_0_synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/COD/lab4/paintboard/paintboard.ip_user_files/sim_scripts -ip_user_files_dir F:/COD/lab4/paintboard/paintboard.ip_user_files -ipstatic_source_dir F:/COD/lab4/paintboard/paintboard.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/modelsim} {questa=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/questa} {riviera=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/riviera} {activehdl=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project disp
+current_project paintboard
+current_project disp
+current_project paintboard
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See F:/COD/lab4/disp/vivado_pid4988.debug)
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {65536} CONFIG.data_width {12} CONFIG.memory_type {simple_dual_port_ram}] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+generate_target all [get_files  f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+launch_runs -jobs 4 dist_mem_gen_0_synth_1
+[Mon Apr 22 21:35:02 2019] Launched dist_mem_gen_0_synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/dist_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory F:/COD/lab4/paintboard/paintboard.ip_user_files/sim_scripts -ip_user_files_dir F:/COD/lab4/paintboard/paintboard.ip_user_files -ipstatic_source_dir F:/COD/lab4/paintboard/paintboard.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/modelsim} {questa=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/questa} {riviera=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/riviera} {activehdl=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project disp
+current_project paintboard
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/VRAM.v] -no_script -reset -force -quiet
+remove_files  F:/COD/lab4/paintboard/paintboard.srcs/sources_1/new/VRAM.v
+current_project disp
+current_project paintboard
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 22 22:45:21 2019] Launched synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/synth_1/runme.log
+[Mon Apr 22 22:45:21 2019] Launched impl_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset clk_wiz_0 f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+INFO: [Project 1-386] Moving file 'f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_PHASE {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.000} CONFIG.MMCM_CLKOUT0_PHASE {50.000} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Mon Apr 22 22:46:25 2019] Launched clk_wiz_0_synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files f:/COD/lab4/paintboard/paintboard.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory F:/COD/lab4/paintboard/paintboard.ip_user_files/sim_scripts -ip_user_files_dir F:/COD/lab4/paintboard/paintboard.ip_user_files -ipstatic_source_dir F:/COD/lab4/paintboard/paintboard.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/modelsim} {questa=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/questa} {riviera=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/riviera} {activehdl=F:/COD/lab4/paintboard/paintboard.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project disp
+current_project paintboard
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 22 22:47:17 2019] Launched synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/synth_1/runme.log
+[Mon Apr 22 22:47:17 2019] Launched impl_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Apr 22 22:47:58 2019] Launched synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Apr 22 22:48:50 2019] Launched synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 22 22:56:23 2019] Launched synth_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/synth_1/runme.log
+[Mon Apr 22 22:56:23 2019] Launched impl_1...
+Run output will be captured here: F:/COD/lab4/paintboard/paintboard.runs/impl_1/runme.log
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 23:03:23 2019...

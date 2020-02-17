@@ -1,0 +1,29 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1708ada835cb4eab9c588cb08c4a3414 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav

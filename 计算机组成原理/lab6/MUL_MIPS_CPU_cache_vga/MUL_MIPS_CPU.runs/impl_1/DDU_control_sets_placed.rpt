@@ -1,0 +1,335 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri May 31 20:35:50 2019
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DDU_control_sets_placed.rpt
+| Design       : DDU
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   265 |
+| Unused register locations in slices containing registers |  1112 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |          167 |
+|      4 |            6 |
+|      6 |            3 |
+|      8 |           10 |
+|     10 |            2 |
+|     12 |            2 |
+|    16+ |           75 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             308 |           63 |
+| No           | No                    | Yes                    |             892 |          186 |
+| No           | Yes                   | No                     |             126 |           57 |
+| Yes          | No                    | No                     |             150 |           63 |
+| Yes          | No                    | Yes                    |            4028 |          820 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                      |                     Enable Signal                     |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  cpu_dut/PC_dut/led_reg[4]_P                           |                                                       | cpu_dut/PC_dut/led_reg[4]_C                           |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[2]_P                           |                                                       | cpu_dut/PC_dut/led_reg[2]_C                           |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[0]_P                           |                                                       | cpu_dut/PC_dut/led_reg[0]_C                           |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[1]_P                           |                                                       | cpu_dut/PC_dut/led_reg[1]_C                           |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[11][1]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[3]_P                           |                                                       | cpu_dut/PC_dut/led_reg[3]_C                           |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[5]_P                           |                                                       | cpu_dut/PC_dut/led_reg[5]_C                           |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[6]_P                           |                                                       | cpu_dut/PC_dut/led_reg[6]_C                           |                1 |              2 |
+|  cpu_dut/PC_dut/led_reg[7]_P                           |                                                       | cpu_dut/PC_dut/led_reg[7]_C                           |                1 |              2 |
+|  cpu_dut/CACHE/FSM_onehot_current_state_reg_n_4_[6]    |                                                       |                                                       |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[11][2]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[11][3]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[13][0]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[10][0]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[13][3]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[14][2]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[14][0]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[14][1]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[14][3]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/op                           | cpu_dut/display_word_dut/Line0_reg[1][0]_LDC_i_1_n_4  |                1 |              2 |
+|  cpu_dut/CACHE/mem_we_reg_i_2_n_4                      |                                                       |                                                       |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/op                           | cpu_dut/display_word_dut/Line0_reg[1][3]_LDC_i_1_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/op                           | cpu_dut/display_word_dut/op_reg[1]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[6][1]_LDC_i_1_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[7][1]_LDC_i_1_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[6][1]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[6][1]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[7][1]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[7][1]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[6][3]_LDC_i_1_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[6][0]_LDC_i_1_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[14][4]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[14][4]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[1][3]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[1][3]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[6][3]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[6][3]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[6][0]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[6][0]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[7][0]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[7][0]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[7][3]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[7][3]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[7][4]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[7][4]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/choose_reg[1]_LDC_i_1_n_4    |                                                       | cpu_dut/display_word_dut/choose_reg[1]_LDC_i_2_n_4    |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[7][2]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[7][2]_LDC_i_2_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/choose_reg[0]_LDC_i_1_n_4    |                                                       | cpu_dut/display_word_dut/choose_reg[0]_LDC_i_2_n_4    |                1 |              2 |
+|  cpu_dut/display_word_dut/g0_b8__1_n_4                 |                                                       | cpu_dut/display_word_dut/g0_b8__1__0_n_4              |                1 |              2 |
+|  cpu_dut/display_word_dut/g0_b8__0__0_n_4              |                                                       | cpu_dut/display_word_dut/g0_b8__0__1_n_4              |                1 |              2 |
+|  cpu_dut/display_word_dut/op_reg[1]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/op_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[7][0]_LDC_i_1_n_4  |                1 |              2 |
+|  cpu_dut/display_word_dut/g0_b8_n_4                    |                                                       | cpu_dut/display_word_dut/g0_b8__0_n_4                 |                1 |              2 |
+|  cpu_dut/display_word_dut/rs_reg[0]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rs_reg[0]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rs_reg[1]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rs_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rs_reg[2]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rs_reg[2]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rd_reg[2]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rd_reg[2]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rs_reg[3]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rs_reg[3]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rd_reg[4]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rd_reg[4]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rs_reg[4]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rs_reg[4]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rd_reg[0]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rd_reg[0]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rd_reg[1]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rd_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rd_reg[3]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rd_reg[3]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rt_reg[4]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rt_reg[4]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rt_reg[1]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rt_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rt_reg[3]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rt_reg[3]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rt_reg[0]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rt_reg[0]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/rt_reg[2]_LDC_i_1_n_4        |                                                       | cpu_dut/display_word_dut/rt_reg[2]_LDC_i_2_n_4        |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[11][0]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[11][0]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[10][1]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[10][1]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[11][2]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[11][2]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[11][3]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[11][3]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[11][1]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[11][1]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[13][0]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[13][0]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[10][3]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[10][3]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[13][1]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[13][1]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[13][3]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[13][3]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[11][4]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[11][4]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[10][0]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[10][0]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[14][2]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[14][2]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[14][0]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[14][0]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[14][3]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[14][3]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/display_word_dut/Line0_reg[14][1]_LDC_i_1_n_4 |                                                       | cpu_dut/display_word_dut/Line0_reg[14][1]_LDC_i_2_n_4 |                1 |              2 |
+|  right_IBUF_BUFG                                       |                                                       | cpu_dut/display_word_dut/choose_reg[0]_LDC_i_2_n_4    |                1 |              2 |
+|  right_IBUF_BUFG                                       |                                                       | cpu_dut/display_word_dut/choose_reg[1]_LDC_i_1_n_4    |                1 |              2 |
+|  right_IBUF_BUFG                                       |                                                       | cpu_dut/display_word_dut/choose_reg[1]_LDC_i_2_n_4    |                1 |              2 |
+|  right_IBUF_BUFG                                       |                                                       | cpu_dut/display_word_dut/choose_reg[0]_LDC_i_1_n_4    |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[7][3]_LDC_i_1_n_4  |                1 |              2 |
+|  n_1_2908_BUFG                                         |                                                       |                                                       |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[7][4]_LDC_i_1_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[7][2]_LDC_i_1_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/g0_b8_n_4                    |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rd_reg[2]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rd_reg[4]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rd_reg[0]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rd_reg[1]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rd[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rd_reg[3]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/g0_b8__0__0_n_4              |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rs_reg[0]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rs_reg[1]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rs_reg[2]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rs_reg[3]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rs_reg[4]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[11][0]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[10][1]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[11][2]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[11][3]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[11][1]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[7][2]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[10][3]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[10][0]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[14][4]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/g0_b8__1_n_4                 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rt_reg[4]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rt_reg[1]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rt_reg[3]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rt_reg[0]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/rt_reg[2]_LDC_i_1_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[13][0]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[13][1]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[13][3]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[14][2]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[14][0]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[14][3]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rt[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[14][1]_LDC_i_1_n_4 |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[3]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[4]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[2]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[0]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[2]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[0]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[1]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[1]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[3]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[4]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[5]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[5]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[6]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[6]_P                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[7]_C                           |                1 |              2 |
+|  led[15]_i_2_n_4                                       |                                                       | cpu_dut/PC_dut/led_reg[7]_P                           |                1 |              2 |
+|  down_IBUF_BUFG                                        | cpu_dut/display_word_dut/rs[4]_P_i_1_n_4              | cpu_dut/display_word_dut/Line0_reg[11][4]_LDC_i_1_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[6][0]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[6][1]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[1][0]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[14][4]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[6][3]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[7][1]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[7][0]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[1][3]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[7][4]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[7][3]_LDC_i_2_n_4  |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/g0_b8__0_n_4                 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/g0_b8__1__0_n_4              |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/g0_b8__0__1_n_4              |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/op_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rs_reg[0]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rs_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rd_reg[2]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rd_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rs_reg[2]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rs_reg[3]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rs_reg[4]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rd_reg[3]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rd_reg[4]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rd_reg[0]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rt_reg[1]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rt_reg[4]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rt_reg[0]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rt_reg[3]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/rt_reg[2]_LDC_i_2_n_4        |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[10][3]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[11][0]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[11][4]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[13][1]_LDC_i_2_n_4 |                1 |              2 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[10][1]_LDC_i_2_n_4 |                1 |              2 |
+|  cpu_dut/CACHE/cache_we_reg_i_2_n_4                    |                                                       |                                                       |                1 |              4 |
+|  cpu_dut/display_word_dut/Line0_reg[1][0]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[1][0]_LDC_i_2_n_4  |                1 |              4 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[1][2]_LDC_i_1_n_4  |                1 |              4 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[1][1]_LDC_i_2_n_4  |                1 |              4 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[1][2]_LDC_i_2_n_4  |                1 |              4 |
+|  down_IBUF_BUFG                                        |                                                       | cpu_dut/display_word_dut/Line0_reg[1][1]_LDC_i_1_n_4  |                1 |              4 |
+|  cpu_dut/IRnMDR_dut/E[0]                               |                                                       |                                                       |                1 |              6 |
+|  cpu_dut/display_word_dut/Line0_reg[1][2]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[1][2]_LDC_i_2_n_4  |                1 |              6 |
+|  seg_dut/count[2]_i_2_n_4                              |                                                       |                                                       |                1 |              6 |
+|  cpu_dut/CACHE/cache_addr_reg[3]_i_2_n_4               |                                                       |                                                       |                2 |              8 |
+|  cpu_dut/CACHE/tag_reg[2][5]_i_1_n_4                   |                                                       |                                                       |                1 |              8 |
+|  cpu_dut/CACHE/tag_reg[0][5]_i_2_n_4                   |                                                       |                                                       |                1 |              8 |
+|  cpu_dut/CACHE/tag_reg[3][5]_i_1_n_4                   |                                                       |                                                       |                1 |              8 |
+|  cpu_dut/CACHE/tag_reg[1][5]_i_1_n_4                   |                                                       |                                                       |                1 |              8 |
+|  cpu_dut/CACHE/tag_reg[6][5]_i_1_n_4                   |                                                       |                                                       |                2 |              8 |
+|  cpu_dut/CACHE/tag_reg[5][5]_i_1_n_4                   |                                                       |                                                       |                1 |              8 |
+|  cpu_dut/CACHE/tag_reg[4][5]_i_1_n_4                   |                                                       |                                                       |                1 |              8 |
+|  cpu_dut/CACHE/tag_reg[7][5]_i_1_n_4                   |                                                       |                                                       |                2 |              8 |
+|  cpu_dut/display_word_dut/Line0_reg[1][1]_LDC_i_1_n_4  |                                                       | cpu_dut/display_word_dut/Line0_reg[1][1]_LDC_i_2_n_4  |                1 |              8 |
+|  cpu_dut/cu/FSM_sequential_next_state_reg[4]_i_2_n_4   |                                                       |                                                       |                2 |             10 |
+|  n_1_2908_BUFG                                         | cpu_dut/display_word_dut/cur_data_dut/col7[6]_i_1_n_4 |                                                       |                3 |             10 |
+|  cpu_dut/CACHE/cache_read_mem_addr_reg[5]_i_2_n_4      |                                                       |                                                       |                2 |             12 |
+|  n_1_2908_BUFG                                         | cpu_dut/dcu_dut/E[0]                                  |                                                       |                3 |             12 |
+|  led[15]_i_2_n_4                                       |                                                       | rst_IBUF                                              |                1 |             16 |
+|  cpu_dut/CACHE/next_state                              |                                                       |                                                       |                3 |             18 |
+|  n_0_2926_BUFG                                         |                                                       | rst_IBUF                                              |                2 |             18 |
+|  enter_IBUF_BUFG                                       |                                                       | rst_IBUF                                              |                4 |             20 |
+|  n_1_2908_BUFG                                         | cpu_dut/dcu_dut/y_cnt_1                               | rst_IBUF                                              |                5 |             24 |
+|  dec_IBUF_BUFG                                         |                                                       | rst_IBUF                                              |                4 |             26 |
+|  inc_IBUF_BUFG                                         |                                                       | rst_IBUF                                              |                4 |             26 |
+|  cpu_dut/display_word_dut/instruction_reg[31]_i_2_n_4  |                                                       |                                                       |                8 |             46 |
+|  n_3_3194_BUFG                                         |                                                       |                                                       |               19 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[4][31][0]                   | rst_IBUF                                              |               14 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[17][31][0]                  | rst_IBUF                                              |               13 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[0][31]_i_1_n_4          | rst_IBUF                                              |               12 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[10][31]_i_1_n_4         | rst_IBUF                                              |               12 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[11][31]_i_1_n_4         | rst_IBUF                                              |               11 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[12][31]_i_1_n_4         | rst_IBUF                                              |               12 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[13][31]_i_1_n_4         | rst_IBUF                                              |                6 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[1][31]_i_1_n_4          | rst_IBUF                                              |                9 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[9][31]_i_1_n_4          | rst_IBUF                                              |               14 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[3][31]_i_1_n_4          | rst_IBUF                                              |                8 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[2][31]_i_1_n_4          | rst_IBUF                                              |                9 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[4][31]_i_1_n_4          | rst_IBUF                                              |               12 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[7][31]_i_1_n_4          | rst_IBUF                                              |               11 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[14][31]_i_1_n_4         | rst_IBUF                                              |                7 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[5][31]_i_1_n_4          | rst_IBUF                                              |               12 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[6][31]_i_1_n_4          | rst_IBUF                                              |               10 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[8][31]_i_1_n_4          | rst_IBUF                                              |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/cu/E[0]                                       | rst_IBUF                                              |               24 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[6][31][0]                   | rst_IBUF                                              |               18 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[5][31][0]                   | rst_IBUF                                              |               15 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[27][31][0]                  | rst_IBUF                                              |               16 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[25][31][0]                  | rst_IBUF                                              |               13 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[7][31][0]                   | rst_IBUF                                              |               22 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[3][31][0]                   | rst_IBUF                                              |               16 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[9][31][0]                   | rst_IBUF                                              |               20 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[23][31][0]                  | rst_IBUF                                              |               22 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[31][31][0]                  | rst_IBUF                                              |               22 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[21][31][0]                  | rst_IBUF                                              |               16 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[10][31][0]                  | rst_IBUF                                              |               12 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[13][31][0]                  | rst_IBUF                                              |               14 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[20][31][0]                  | rst_IBUF                                              |               14 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[29][31][0]                  | rst_IBUF                                              |               17 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[8][31][0]                   | rst_IBUF                                              |               16 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[1][31][0]                   | rst_IBUF                                              |               12 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[0][31][0]                   | rst_IBUF                                              |               10 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[16][31][0]                  | rst_IBUF                                              |               13 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[18][31][0]                  | rst_IBUF                                              |               10 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[22][31][0]                  | rst_IBUF                                              |               20 |             64 |
+|  n_2_41_BUFG                                           |                                                       |                                                       |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[26][31][0]                  | rst_IBUF                                              |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[30][31][0]                  | rst_IBUF                                              |               18 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[14][31][0]                  | rst_IBUF                                              |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[24][31][0]                  | rst_IBUF                                              |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[19][31][0]                  | rst_IBUF                                              |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[28][31][0]                  | rst_IBUF                                              |               14 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[12][31][0]                  | rst_IBUF                                              |               13 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[2][31][0]                   | rst_IBUF                                              |               11 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[11][31][0]                  | rst_IBUF                                              |               14 |             64 |
+|  run_BUFG                                              | cpu_dut/IRnMDR_dut/RF_reg[15][31][0]                  | rst_IBUF                                              |               19 |             64 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/cache_dut/cache[15][31]_i_1_n_4         | rst_IBUF                                              |               10 |             64 |
+|  run_BUFG                                              | cpu_dut/cu/IRWrite                                    | rst_IBUF                                              |               11 |             76 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line6[1][4]_i_1_n_4          | rst_IBUF                                              |               11 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line8[1][4]_i_1_n_4          | rst_IBUF                                              |               11 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line2[1][4]_i_1_n_4          | rst_IBUF                                              |               10 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line9[1][4]_i_1_n_4          | rst_IBUF                                              |               10 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line1[1][4]_i_1_n_4          | rst_IBUF                                              |                9 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line5[1][4]_i_1_n_4          | rst_IBUF                                              |                9 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line3[1][4]_i_1_n_4          | rst_IBUF                                              |               11 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line4[1][4]_i_1_n_4          | rst_IBUF                                              |                9 |             78 |
+|  enter_IBUF_BUFG                                       | cpu_dut/display_word_dut/Line7[1][4]_i_1_n_4          | rst_IBUF                                              |               11 |             78 |
+|  n_1_2908_BUFG                                         |                                                       | rst_IBUF                                              |               21 |            118 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/counter_next[0][7]_i_1_n_4              |                                                       |               57 |            128 |
+|  n_0_2926_BUFG                                         | cpu_dut/CACHE/mem_we                                  |                                                       |               32 |            256 |
+|  clk_100M_IBUF_BUFG                                    |                                                       | rst_IBUF                                              |               34 |            256 |
+|  run_BUFG                                              |                                                       | rst_IBUF                                              |               47 |            266 |
+|  n_0_2926_BUFG                                         |                                                       |                                                       |               64 |            512 |
++--------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

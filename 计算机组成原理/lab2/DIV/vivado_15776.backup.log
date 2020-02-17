@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr  2 20:58:50 2019
+# Process ID: 15776
+# Current directory: F:/COD/lab2/DIV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15616 F:\COD\lab2\DIV\DIV.xpr
+# Log file: F:/COD/lab2/DIV/vivado.log
+# Journal file: F:/COD/lab2/DIV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab2/DIV/DIV.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 22:28:27 2019...

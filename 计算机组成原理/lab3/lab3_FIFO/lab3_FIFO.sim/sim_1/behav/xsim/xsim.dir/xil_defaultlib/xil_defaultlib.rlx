@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/COD/lab3/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v,1529022454,verilog,,,,glbl,,,,,,,,
+F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v,1555592726,verilog,,,,FIFO_tb,,,../../../../lab3_FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v,1555666282,verilog,,,,counter_3BIT_tb,,,../../../../lab3_FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+,,,,,,clk_wiz_0;clk_wiz_0_clk_wiz_0_clk_wiz,,,,,,,,
+F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v,1555674846,verilog,,F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v,,FIFO;LCU;LCU_RF;RF;SCU;counter_3BIT;debouncer;decoder;display;divider;seg_ctrl,,,../../../../lab3_FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,

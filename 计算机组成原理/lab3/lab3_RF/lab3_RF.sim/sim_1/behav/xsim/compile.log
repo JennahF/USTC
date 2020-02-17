@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/lab3_RF/lab3_RF.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab3/lab3_RF/lab3_RF.srcs/sim_1/new/test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_tb

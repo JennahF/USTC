@@ -1,0 +1,7 @@
+Running: xsim.dir/RST_behav/xsimk.exe -simmode gui -wdb RST_behav.wdb -simrunnum 0 -socket 50563
+Design successfully loaded
+Design Loading Memory Usage: 6752 KB (Peak: 6752 KB)
+Design Loading CPU Usage: 233 ms
+Simulation completed
+Simulation Memory Usage: 7288 KB (Peak: 7288 KB)
+Simulation CPU Usage: 233 ms

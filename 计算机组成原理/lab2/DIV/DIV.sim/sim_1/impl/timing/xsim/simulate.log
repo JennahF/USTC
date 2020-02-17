@@ -1,0 +1,16 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 171: Timing violation in scope /DIV_sim/L/done_reg/TChk171_456 at time 258735 ps $width (posedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 171: Timing violation in scope /DIV_sim/L/done_reg/TChk171_456 at time 458869 ps $width (posedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[2]/TChk169_454 at time 459048 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[4]/TChk169_454 at time 459048 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[5]/TChk169_454 at time 459048 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/FSM_sequential_next_state_reg[0]/TChk169_454 at time 459143 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/FSM_sequential_next_state_reg[1]/TChk169_454 at time 459143 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/FSM_sequential_next_state_reg[2]/TChk169_454 at time 459143 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 163: Timing violation in scope /DIV_sim/L/x_next_reg[2]/TChk163_448 at time 459201 ps $setuphold (posedge G,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,G_dly,D_dly) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[0]/TChk169_454 at time 459225 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[6]/TChk169_454 at time 459225 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[7]/TChk169_454 at time 459225 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[1]/TChk169_454 at time 459374 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "D:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /DIV_sim/L/x_next_reg[3]/TChk169_454 at time 459374 ps $width (negedge G,(0:0:0),0,notifier) 

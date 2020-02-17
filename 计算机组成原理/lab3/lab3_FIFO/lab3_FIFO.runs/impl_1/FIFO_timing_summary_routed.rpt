@@ -1,0 +1,1481 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr 19 20:00:17 2019
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file FIFO_timing_summary_routed.rpt -pb FIFO_timing_summary_routed.pb -rpx FIFO_timing_summary_routed.rpx -warn_on_violation
+| Design       : FIFO
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.22 2018-03-21
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 117 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: SCU_DUT/divider_DUT/sclk_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 293 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 22 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    196.351        0.000                      0                   13        0.276        0.000                      0                   13        3.000        0.000                       0                    19  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                                Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                                ------------         ----------      --------------
+SCU_DUT/divider_DUT/d1/inst/clk_in1  {0.000 5.000}        10.000          100.000         
+  clk_out1_clk_wiz_0                 {0.000 100.000}      200.000         5.000           
+  clkfbout_clk_wiz_0                 {0.000 25.000}       50.000          20.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+SCU_DUT/divider_DUT/d1/inst/clk_in1                                                                                                                                                    3.000        0.000                       0                     1  
+  clk_out1_clk_wiz_0                     196.351        0.000                      0                   13        0.276        0.000                      0                   13       13.360        0.000                       0                    15  
+  clkfbout_clk_wiz_0                                                                                                                                                                  47.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  SCU_DUT/divider_DUT/d1/inst/clk_in1
+  To Clock:  SCU_DUT/divider_DUT/d1/inst/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         SCU_DUT/divider_DUT/d1/inst/clk_in1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { SCU_DUT/divider_DUT/d1/inst/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_0
+  To Clock:  clk_out1_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack      196.351ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.276ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       13.360ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             196.351ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[9]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.337ns  (logic 0.966ns (28.946%)  route 2.371ns (71.054%))
+  Logic Levels:           3  (LUT2=1 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y95          FDCE (Prop_fdce_C_Q)         0.419     2.144 r  SCU_DUT/divider_DUT/cnt1_reg[9]/Q
+                         net (fo=3, routed)           0.817     2.962    SCU_DUT/divider_DUT/cnt1[9]
+    SLICE_X1Y93          LUT6 (Prop_lut6_I0_O)        0.299     3.261 r  SCU_DUT/divider_DUT/cnt1[11]_i_2/O
+                         net (fo=13, routed)          0.706     3.967    SCU_DUT/divider_DUT/cnt1[11]_i_2_n_0
+    SLICE_X1Y95          LUT6 (Prop_lut6_I5_O)        0.124     4.091 r  SCU_DUT/divider_DUT/cnt1[0]_i_2/O
+                         net (fo=1, routed)           0.848     4.939    SCU_DUT/divider_DUT/cnt1[0]_i_2_n_0
+    SLICE_X1Y94          LUT2 (Prop_lut2_I0_O)        0.124     5.063 r  SCU_DUT/divider_DUT/cnt1[0]_i_1/O
+                         net (fo=1, routed)           0.000     5.063    SCU_DUT/divider_DUT/cnt1_0[0]
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y94          FDCE (Setup_fdce_C_D)        0.031   201.414    SCU_DUT/divider_DUT/cnt1_reg[0]
+  -------------------------------------------------------------------
+                         required time                        201.414    
+                         arrival time                          -5.063    
+  -------------------------------------------------------------------
+                         slack                                196.351    
+
+Slack (MET) :             196.391ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[7]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.341ns  (logic 1.661ns (49.708%)  route 1.680ns (50.292%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDPE (Prop_fdpe_C_Q)         0.419     2.144 f  SCU_DUT/divider_DUT/cnt1_reg[7]/Q
+                         net (fo=5, routed)           0.995     3.139    SCU_DUT/divider_DUT/cnt1[7]
+    SLICE_X0Y94          LUT1 (Prop_lut1_I0_O)        0.297     3.436 r  SCU_DUT/divider_DUT/cnt10_carry__0_i_2/O
+                         net (fo=1, routed)           0.000     3.436    SCU_DUT/divider_DUT/cnt10_carry__0_i_2_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.834 r  SCU_DUT/divider_DUT/cnt10_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     3.834    SCU_DUT/divider_DUT/cnt10_carry__0_n_0
+    SLICE_X0Y95          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     4.056 r  SCU_DUT/divider_DUT/cnt10_carry__1/O[0]
+                         net (fo=1, routed)           0.686     4.742    SCU_DUT/divider_DUT/data0[9]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I3_O)        0.325     5.067 r  SCU_DUT/divider_DUT/cnt1[9]_i_1/O
+                         net (fo=1, routed)           0.000     5.067    SCU_DUT/divider_DUT/cnt1_0[9]
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[9]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y95          FDCE (Setup_fdce_C_D)        0.075   201.458    SCU_DUT/divider_DUT/cnt1_reg[9]
+  -------------------------------------------------------------------
+                         required time                        201.458    
+                         arrival time                          -5.067    
+  -------------------------------------------------------------------
+                         slack                                196.391    
+
+Slack (MET) :             196.414ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.343ns  (logic 1.527ns (45.671%)  route 1.816ns (54.329%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.120ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.456     2.181 f  SCU_DUT/divider_DUT/cnt1_reg[3]/Q
+                         net (fo=3, routed)           0.876     3.057    SCU_DUT/divider_DUT/cnt1[3]
+    SLICE_X0Y93          LUT1 (Prop_lut1_I0_O)        0.124     3.181 r  SCU_DUT/divider_DUT/cnt10_carry_i_2/O
+                         net (fo=1, routed)           0.000     3.181    SCU_DUT/divider_DUT/cnt10_carry_i_2_n_0
+    SLICE_X0Y93          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.579 r  SCU_DUT/divider_DUT/cnt10_carry/CO[3]
+                         net (fo=1, routed)           0.000     3.579    SCU_DUT/divider_DUT/cnt10_carry_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     3.801 r  SCU_DUT/divider_DUT/cnt10_carry__0/O[0]
+                         net (fo=1, routed)           0.941     4.742    SCU_DUT/divider_DUT/data0[5]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I3_O)        0.327     5.069 r  SCU_DUT/divider_DUT/cnt1[5]_i_1/O
+                         net (fo=1, routed)           0.000     5.069    SCU_DUT/divider_DUT/cnt1_0[5]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[5]/C
+                         clock pessimism              0.120   201.725    
+                         clock uncertainty           -0.318   201.408    
+    SLICE_X1Y93          FDCE (Setup_fdce_C_D)        0.075   201.483    SCU_DUT/divider_DUT/cnt1_reg[5]
+  -------------------------------------------------------------------
+                         required time                        201.483    
+                         arrival time                          -5.069    
+  -------------------------------------------------------------------
+                         slack                                196.414    
+
+Slack (MET) :             196.459ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[7]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.273ns  (logic 1.549ns (47.328%)  route 1.724ns (52.672%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.456     2.181 f  SCU_DUT/divider_DUT/cnt1_reg[3]/Q
+                         net (fo=3, routed)           0.876     3.057    SCU_DUT/divider_DUT/cnt1[3]
+    SLICE_X0Y93          LUT1 (Prop_lut1_I0_O)        0.124     3.181 r  SCU_DUT/divider_DUT/cnt10_carry_i_2/O
+                         net (fo=1, routed)           0.000     3.181    SCU_DUT/divider_DUT/cnt10_carry_i_2_n_0
+    SLICE_X0Y93          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.579 r  SCU_DUT/divider_DUT/cnt10_carry/CO[3]
+                         net (fo=1, routed)           0.000     3.579    SCU_DUT/divider_DUT/cnt10_carry_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     3.818 r  SCU_DUT/divider_DUT/cnt10_carry__0/O[2]
+                         net (fo=1, routed)           0.848     4.666    SCU_DUT/divider_DUT/data0[7]
+    SLICE_X1Y94          LUT4 (Prop_lut4_I3_O)        0.332     4.998 r  SCU_DUT/divider_DUT/cnt1[7]_i_1/O
+                         net (fo=1, routed)           0.000     4.998    SCU_DUT/divider_DUT/cnt1_0[7]
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[7]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y94          FDPE (Setup_fdpe_C_D)        0.075   201.458    SCU_DUT/divider_DUT/cnt1_reg[7]
+  -------------------------------------------------------------------
+                         required time                        201.458    
+                         arrival time                          -4.998    
+  -------------------------------------------------------------------
+                         slack                                196.459    
+
+Slack (MET) :             196.529ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[7]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.157ns  (logic 1.751ns (55.458%)  route 1.406ns (44.542%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDPE (Prop_fdpe_C_Q)         0.419     2.144 f  SCU_DUT/divider_DUT/cnt1_reg[7]/Q
+                         net (fo=5, routed)           0.995     3.139    SCU_DUT/divider_DUT/cnt1[7]
+    SLICE_X0Y94          LUT1 (Prop_lut1_I0_O)        0.297     3.436 r  SCU_DUT/divider_DUT/cnt10_carry__0_i_2/O
+                         net (fo=1, routed)           0.000     3.436    SCU_DUT/divider_DUT/cnt10_carry__0_i_2_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.834 r  SCU_DUT/divider_DUT/cnt10_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     3.834    SCU_DUT/divider_DUT/cnt10_carry__0_n_0
+    SLICE_X0Y95          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.168 r  SCU_DUT/divider_DUT/cnt10_carry__1/O[1]
+                         net (fo=1, routed)           0.411     4.580    SCU_DUT/divider_DUT/data0[10]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I3_O)        0.303     4.883 r  SCU_DUT/divider_DUT/cnt1[10]_i_1/O
+                         net (fo=1, routed)           0.000     4.883    SCU_DUT/divider_DUT/cnt1_0[10]
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[10]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y95          FDCE (Setup_fdce_C_D)        0.029   201.412    SCU_DUT/divider_DUT/cnt1_reg[10]
+  -------------------------------------------------------------------
+                         required time                        201.412    
+                         arrival time                          -4.883    
+  -------------------------------------------------------------------
+                         slack                                196.529    
+
+Slack (MET) :             196.537ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[7]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[11]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.151ns  (logic 1.655ns (52.522%)  route 1.496ns (47.478%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDPE (Prop_fdpe_C_Q)         0.419     2.144 f  SCU_DUT/divider_DUT/cnt1_reg[7]/Q
+                         net (fo=5, routed)           0.995     3.139    SCU_DUT/divider_DUT/cnt1[7]
+    SLICE_X0Y94          LUT1 (Prop_lut1_I0_O)        0.297     3.436 r  SCU_DUT/divider_DUT/cnt10_carry__0_i_2/O
+                         net (fo=1, routed)           0.000     3.436    SCU_DUT/divider_DUT/cnt10_carry__0_i_2_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.834 r  SCU_DUT/divider_DUT/cnt10_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     3.834    SCU_DUT/divider_DUT/cnt10_carry__0_n_0
+    SLICE_X0Y95          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     4.073 r  SCU_DUT/divider_DUT/cnt10_carry__1/O[2]
+                         net (fo=1, routed)           0.501     4.574    SCU_DUT/divider_DUT/data0[11]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I3_O)        0.302     4.876 r  SCU_DUT/divider_DUT/cnt1[11]_i_1/O
+                         net (fo=1, routed)           0.000     4.876    SCU_DUT/divider_DUT/cnt1_0[11]
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[11]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y95          FDPE (Setup_fdpe_C_D)        0.031   201.414    SCU_DUT/divider_DUT/cnt1_reg[11]
+  -------------------------------------------------------------------
+                         required time                        201.414    
+                         arrival time                          -4.876    
+  -------------------------------------------------------------------
+                         slack                                196.537    
+
+Slack (MET) :             196.584ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[8]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.148ns  (logic 1.592ns (50.565%)  route 1.556ns (49.435%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.456     2.181 f  SCU_DUT/divider_DUT/cnt1_reg[3]/Q
+                         net (fo=3, routed)           0.876     3.057    SCU_DUT/divider_DUT/cnt1[3]
+    SLICE_X0Y93          LUT1 (Prop_lut1_I0_O)        0.124     3.181 r  SCU_DUT/divider_DUT/cnt10_carry_i_2/O
+                         net (fo=1, routed)           0.000     3.181    SCU_DUT/divider_DUT/cnt10_carry_i_2_n_0
+    SLICE_X0Y93          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.579 r  SCU_DUT/divider_DUT/cnt10_carry/CO[3]
+                         net (fo=1, routed)           0.000     3.579    SCU_DUT/divider_DUT/cnt10_carry_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     3.892 r  SCU_DUT/divider_DUT/cnt10_carry__0/O[3]
+                         net (fo=1, routed)           0.681     4.573    SCU_DUT/divider_DUT/data0[8]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I3_O)        0.301     4.874 r  SCU_DUT/divider_DUT/cnt1[8]_i_1/O
+                         net (fo=1, routed)           0.000     4.874    SCU_DUT/divider_DUT/cnt1_0[8]
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[8]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y95          FDPE (Setup_fdpe_C_D)        0.075   201.458    SCU_DUT/divider_DUT/cnt1_reg[8]
+  -------------------------------------------------------------------
+                         required time                        201.458    
+                         arrival time                          -4.874    
+  -------------------------------------------------------------------
+                         slack                                196.584    
+
+Slack (MET) :             196.690ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[6]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.999ns  (logic 1.615ns (53.858%)  route 1.384ns (46.142%))
+  Logic Levels:           4  (CARRY4=2 LUT1=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.456     2.181 f  SCU_DUT/divider_DUT/cnt1_reg[3]/Q
+                         net (fo=3, routed)           0.876     3.057    SCU_DUT/divider_DUT/cnt1[3]
+    SLICE_X0Y93          LUT1 (Prop_lut1_I0_O)        0.124     3.181 r  SCU_DUT/divider_DUT/cnt10_carry_i_2/O
+                         net (fo=1, routed)           0.000     3.181    SCU_DUT/divider_DUT/cnt10_carry_i_2_n_0
+    SLICE_X0Y93          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.579 r  SCU_DUT/divider_DUT/cnt10_carry/CO[3]
+                         net (fo=1, routed)           0.000     3.579    SCU_DUT/divider_DUT/cnt10_carry_n_0
+    SLICE_X0Y94          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     3.913 r  SCU_DUT/divider_DUT/cnt10_carry__0/O[1]
+                         net (fo=1, routed)           0.508     4.421    SCU_DUT/divider_DUT/data0[6]
+    SLICE_X1Y94          LUT4 (Prop_lut4_I3_O)        0.303     4.724 r  SCU_DUT/divider_DUT/cnt1[6]_i_1/O
+                         net (fo=1, routed)           0.000     4.724    SCU_DUT/divider_DUT/cnt1_0[6]
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[6]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y94          FDPE (Setup_fdpe_C_D)        0.031   201.414    SCU_DUT/divider_DUT/cnt1_reg[6]
+  -------------------------------------------------------------------
+                         required time                        201.414    
+                         arrival time                          -4.724    
+  -------------------------------------------------------------------
+                         slack                                196.690    
+
+Slack (MET) :             196.912ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.774ns  (logic 1.237ns (44.591%)  route 1.537ns (55.409%))
+  Logic Levels:           2  (CARRY4=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.456     2.181 r  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.592     2.774    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X0Y93          CARRY4 (Prop_carry4_CYINIT_O[0])
+                                                      0.482     3.256 r  SCU_DUT/divider_DUT/cnt10_carry/O[0]
+                         net (fo=1, routed)           0.945     4.201    SCU_DUT/divider_DUT/data0[1]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I3_O)        0.299     4.500 r  SCU_DUT/divider_DUT/cnt1[1]_i_1/O
+                         net (fo=1, routed)           0.000     4.500    SCU_DUT/divider_DUT/cnt1_0[1]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[1]/C
+                         clock pessimism              0.095   201.700    
+                         clock uncertainty           -0.318   201.383    
+    SLICE_X1Y93          FDCE (Setup_fdce_C_D)        0.029   201.412    SCU_DUT/divider_DUT/cnt1_reg[1]
+  -------------------------------------------------------------------
+                         required time                        201.412    
+                         arrival time                          -4.500    
+  -------------------------------------------------------------------
+                         slack                                196.912    
+
+Slack (MET) :             196.955ns  (required time - arrival time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            200.000ns  (clk_out1_clk_wiz_0 rise@200.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.802ns  (logic 1.266ns (45.177%)  route 1.536ns (54.823%))
+  Logic Levels:           3  (CARRY4=1 LUT1=1 LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.605ns = ( 201.605 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.725ns
+    Clock Pessimism Removal (CPR):    0.120ns
+  Clock Uncertainty:      0.318ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.631ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.809     1.809    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.723     1.725    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.456     2.181 f  SCU_DUT/divider_DUT/cnt1_reg[3]/Q
+                         net (fo=3, routed)           0.876     3.057    SCU_DUT/divider_DUT/cnt1[3]
+    SLICE_X0Y93          LUT1 (Prop_lut1_I0_O)        0.124     3.181 r  SCU_DUT/divider_DUT/cnt10_carry_i_2/O
+                         net (fo=1, routed)           0.000     3.181    SCU_DUT/divider_DUT/cnt10_carry_i_2_n_0
+    SLICE_X0Y93          CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352     3.533 r  SCU_DUT/divider_DUT/cnt10_carry/O[3]
+                         net (fo=1, routed)           0.661     4.194    SCU_DUT/divider_DUT/data0[4]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I3_O)        0.334     4.528 r  SCU_DUT/divider_DUT/cnt1[4]_i_1/O
+                         net (fo=1, routed)           0.000     4.528    SCU_DUT/divider_DUT/cnt1_0[4]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000   200.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         1.683   201.683    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694   197.989 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923   199.912    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091   200.003 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          1.602   201.605    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[4]/C
+                         clock pessimism              0.120   201.725    
+                         clock uncertainty           -0.318   201.408    
+    SLICE_X1Y93          FDCE (Setup_fdce_C_D)        0.075   201.483    SCU_DUT/divider_DUT/cnt1_reg[4]
+  -------------------------------------------------------------------
+                         required time                        201.483    
+                         arrival time                          -4.528    
+  -------------------------------------------------------------------
+                         slack                                196.955    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.276ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/sclk_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/sclk_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.383ns  (logic 0.230ns (60.084%)  route 0.153ns (39.916%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/sclk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.128     0.732 r  SCU_DUT/divider_DUT/sclk_reg/Q
+                         net (fo=4, routed)           0.153     0.884    SCU_DUT/divider_DUT/CLK
+    SLICE_X1Y94          LUT4 (Prop_lut4_I3_O)        0.102     0.986 r  SCU_DUT/divider_DUT/sclk_i_1/O
+                         net (fo=1, routed)           0.000     0.986    SCU_DUT/divider_DUT/sclk_i_1_n_0
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/sclk_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/sclk_reg/C
+                         clock pessimism             -0.273     0.604    
+    SLICE_X1Y94          FDCE (Hold_fdce_C_D)         0.107     0.711    SCU_DUT/divider_DUT/sclk_reg
+  -------------------------------------------------------------------
+                         required time                         -0.711    
+                         arrival time                           0.986    
+  -------------------------------------------------------------------
+                         slack                                  0.276    
+
+Slack (MET) :             0.296ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.419ns  (logic 0.187ns (44.611%)  route 0.232ns (55.389%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 r  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.232     0.977    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I2_O)        0.046     1.023 r  SCU_DUT/divider_DUT/cnt1[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.023    SCU_DUT/divider_DUT/cnt1_0[5]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[5]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y93          FDCE (Hold_fdce_C_D)         0.107     0.727    SCU_DUT/divider_DUT/cnt1_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -0.727    
+                         arrival time                           1.023    
+  -------------------------------------------------------------------
+                         slack                                  0.296    
+
+Slack (MET) :             0.297ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[8]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.420ns  (logic 0.186ns (44.249%)  route 0.234ns (55.751%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 f  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.234     0.979    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I2_O)        0.045     1.024 r  SCU_DUT/divider_DUT/cnt1[8]_i_1/O
+                         net (fo=1, routed)           0.000     1.024    SCU_DUT/divider_DUT/cnt1_0[8]
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[8]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y95          FDPE (Hold_fdpe_C_D)         0.107     0.727    SCU_DUT/divider_DUT/cnt1_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -0.727    
+                         arrival time                           1.024    
+  -------------------------------------------------------------------
+                         slack                                  0.297    
+
+Slack (MET) :             0.311ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.418ns  (logic 0.186ns (44.479%)  route 0.232ns (55.521%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 r  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.232     0.977    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I2_O)        0.045     1.022 r  SCU_DUT/divider_DUT/cnt1[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.022    SCU_DUT/divider_DUT/cnt1_0[1]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[1]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y93          FDCE (Hold_fdce_C_D)         0.091     0.711    SCU_DUT/divider_DUT/cnt1_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.711    
+                         arrival time                           1.022    
+  -------------------------------------------------------------------
+                         slack                                  0.311    
+
+Slack (MET) :             0.312ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[11]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.420ns  (logic 0.186ns (44.249%)  route 0.234ns (55.751%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 f  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.234     0.979    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I2_O)        0.045     1.024 r  SCU_DUT/divider_DUT/cnt1[11]_i_1/O
+                         net (fo=1, routed)           0.000     1.024    SCU_DUT/divider_DUT/cnt1_0[11]
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[11]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y95          FDPE (Hold_fdpe_C_D)         0.092     0.712    SCU_DUT/divider_DUT/cnt1_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -0.712    
+                         arrival time                           1.024    
+  -------------------------------------------------------------------
+                         slack                                  0.312    
+
+Slack (MET) :             0.330ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.453ns  (logic 0.190ns (41.905%)  route 0.263ns (58.095%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 r  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.263     1.008    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I2_O)        0.049     1.057 r  SCU_DUT/divider_DUT/cnt1[4]_i_1/O
+                         net (fo=1, routed)           0.000     1.057    SCU_DUT/divider_DUT/cnt1_0[4]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[4]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y93          FDCE (Hold_fdce_C_D)         0.107     0.727    SCU_DUT/divider_DUT/cnt1_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -0.727    
+                         arrival time                           1.057    
+  -------------------------------------------------------------------
+                         slack                                  0.330    
+
+Slack (MET) :             0.341ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.449ns  (logic 0.186ns (41.388%)  route 0.263ns (58.612%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 r  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.263     1.008    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y93          LUT4 (Prop_lut4_I2_O)        0.045     1.053 r  SCU_DUT/divider_DUT/cnt1[3]_i_1/O
+                         net (fo=1, routed)           0.000     1.053    SCU_DUT/divider_DUT/cnt1_0[3]
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[3]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y93          FDCE (Hold_fdce_C_D)         0.092     0.712    SCU_DUT/divider_DUT/cnt1_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -0.712    
+                         arrival time                           1.053    
+  -------------------------------------------------------------------
+                         slack                                  0.341    
+
+Slack (MET) :             0.348ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.440ns  (logic 0.186ns (42.247%)  route 0.254ns (57.753%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 f  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.254     0.999    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y94          LUT2 (Prop_lut2_I1_O)        0.045     1.044 r  SCU_DUT/divider_DUT/cnt1[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.044    SCU_DUT/divider_DUT/cnt1_0[0]
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                         clock pessimism             -0.273     0.604    
+    SLICE_X1Y94          FDCE (Hold_fdce_C_D)         0.092     0.696    SCU_DUT/divider_DUT/cnt1_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.696    
+                         arrival time                           1.044    
+  -------------------------------------------------------------------
+                         slack                                  0.348    
+
+Slack (MET) :             0.380ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.503ns  (logic 0.185ns (36.754%)  route 0.318ns (63.246%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y94          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y94          FDCE (Prop_fdce_C_Q)         0.141     0.745 r  SCU_DUT/divider_DUT/cnt1_reg[0]/Q
+                         net (fo=14, routed)          0.318     1.063    SCU_DUT/divider_DUT/cnt1[0]
+    SLICE_X1Y95          LUT4 (Prop_lut4_I2_O)        0.044     1.107 r  SCU_DUT/divider_DUT/cnt1[9]_i_1/O
+                         net (fo=1, routed)           0.000     1.107    SCU_DUT/divider_DUT/cnt1_0[9]
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y95          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[9]/C
+                         clock pessimism             -0.257     0.620    
+    SLICE_X1Y95          FDCE (Hold_fdce_C_D)         0.107     0.727    SCU_DUT/divider_DUT/cnt1_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -0.727    
+                         arrival time                           1.107    
+  -------------------------------------------------------------------
+                         slack                                  0.380    
+
+Slack (MET) :             0.390ns  (arrival time - required time)
+  Source:                 SCU_DUT/divider_DUT/cnt1_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            SCU_DUT/divider_DUT/cnt1_reg[2]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.482ns  (logic 0.231ns (47.893%)  route 0.251ns (52.107%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.877ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.624     0.624    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.602     0.604    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDCE                                         r  SCU_DUT/divider_DUT/cnt1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y93          FDCE (Prop_fdce_C_Q)         0.141     0.745 f  SCU_DUT/divider_DUT/cnt1_reg[1]/Q
+                         net (fo=3, routed)           0.123     0.868    SCU_DUT/divider_DUT/cnt1[1]
+    SLICE_X1Y93          LUT6 (Prop_lut6_I5_O)        0.045     0.913 f  SCU_DUT/divider_DUT/cnt1[11]_i_2/O
+                         net (fo=13, routed)          0.128     1.041    SCU_DUT/divider_DUT/cnt1[11]_i_2_n_0
+    SLICE_X1Y93          LUT4 (Prop_lut4_I0_O)        0.045     1.086 r  SCU_DUT/divider_DUT/cnt1[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.086    SCU_DUT/divider_DUT/cnt1_0[2]
+    SLICE_X1Y93          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=118, routed)         0.898     0.898    SCU_DUT/divider_DUT/d1/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    SCU_DUT/divider_DUT/d1/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  SCU_DUT/divider_DUT/d1/inst/clkout1_buf/O
+                         net (fo=13, routed)          0.875     0.877    SCU_DUT/divider_DUT/clk_5m
+    SLICE_X1Y93          FDPE                                         r  SCU_DUT/divider_DUT/cnt1_reg[2]/C
+                         clock pessimism             -0.273     0.604    
+    SLICE_X1Y93          FDPE (Hold_fdpe_C_D)         0.092     0.696    SCU_DUT/divider_DUT/cnt1_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -0.696    
+                         arrival time                           1.086    
+  -------------------------------------------------------------------
+                         slack                                  0.390    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clk_wiz_0
+Waveform(ns):       { 0.000 100.000 }
+Period(ns):         200.000
+Sources:            { SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         200.000     197.845    BUFGCTRL_X0Y0    SCU_DUT/divider_DUT/d1/inst/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         200.000     198.751    MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDCE/C              n/a            1.000         200.000     199.000    SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[0]/C
+Min Period        n/a     FDCE/C              n/a            1.000         200.000     199.000    SLICE_X1Y95      SCU_DUT/divider_DUT/cnt1_reg[10]/C
+Min Period        n/a     FDPE/C              n/a            1.000         200.000     199.000    SLICE_X1Y95      SCU_DUT/divider_DUT/cnt1_reg[11]/C
+Min Period        n/a     FDCE/C              n/a            1.000         200.000     199.000    SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[1]/C
+Min Period        n/a     FDPE/C              n/a            1.000         200.000     199.000    SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[2]/C
+Min Period        n/a     FDCE/C              n/a            1.000         200.000     199.000    SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[3]/C
+Min Period        n/a     FDCE/C              n/a            1.000         200.000     199.000    SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[4]/C
+Min Period        n/a     FDCE/C              n/a            1.000         200.000     199.000    SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[5]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       200.000     13.360     MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[0]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y95      SCU_DUT/divider_DUT/cnt1_reg[10]/C
+Low Pulse Width   Slow    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y95      SCU_DUT/divider_DUT/cnt1_reg[11]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[1]/C
+Low Pulse Width   Slow    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[2]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[3]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[4]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[5]/C
+Low Pulse Width   Slow    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[6]/C
+Low Pulse Width   Slow    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[7]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[0]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y95      SCU_DUT/divider_DUT/cnt1_reg[10]/C
+High Pulse Width  Fast    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y95      SCU_DUT/divider_DUT/cnt1_reg[11]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[1]/C
+High Pulse Width  Fast    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[2]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[3]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[4]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         100.000     99.500     SLICE_X1Y93      SCU_DUT/divider_DUT/cnt1_reg[5]/C
+High Pulse Width  Fast    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[6]/C
+High Pulse Width  Fast    FDPE/C              n/a            0.500         100.000     99.500     SLICE_X1Y94      SCU_DUT/divider_DUT/cnt1_reg[7]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       47.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         50.000      47.845     BUFGCTRL_X0Y1    SCU_DUT/divider_DUT/d1/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X0Y0  SCU_DUT/divider_DUT/d1/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

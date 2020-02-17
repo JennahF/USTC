@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 19 18:58:07 2019
+# Process ID: 4260
+# Current directory: F:/COD/lab3/lab3_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5192 F:\COD\lab3\lab3_FIFO\lab3_FIFO.xpr
+# Log file: F:/COD/lab3/lab3_FIFO/vivado.log
+# Journal file: F:/COD/lab3/lab3_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab3/lab3_FIFO/lab3_FIFO.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/imports/lab3_FIFO/FIFO_tb_behav.wcfg
+source counter_3BIT_tb.tcl
+restart
+run 10 us
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab3/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab3/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIFO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/imports/lab3_FIFO/FIFO_tb_behav.wcfg
+source FIFO_tb.tcl
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/an}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/seg_sel}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/RF}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/outer}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/divider_DUT/clk_5m}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/divider_DUT/sclk}} 
+restart
+run 10 us
+relaunch_sim
+reset_simulation -simset sim_1 -mode post-implementation -type functional
+launch_simulation -mode post-implementation -type functional
+launch_simulation -mode post-implementation -type functional
+open_wave_config F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/imports/lab3_FIFO/FIFO_tb_behav.wcfg
+source FIFO_tb.tcl
+current_sim simulation_2
+close_sim
+close_sim
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[0] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[1] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[2] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[3] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[4] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[5] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[6] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[7] }} 
+relaunch_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/imports/lab3_FIFO/FIFO_tb_behav.wcfg
+source FIFO_tb.tcl
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[0] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[1] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[2] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[3] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[4] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[5] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[6] }} {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/RF_DUT/\RF_reg[7] }} 
+restart
+run 10 us
+launch_simulation
+open_wave_config F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/imports/lab3_FIFO/FIFO_tb_behav.wcfg
+source FIFO_tb.tcl
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/counter_DUT/cnt}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/decoder_DUT/out}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/rd1}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/ra1}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/decoder_DUT/en}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/display_DUT/valid}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/LCU_RF_DUT/valid}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/td}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/state}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/next_state}} 
+restart
+run 10 us
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/x_pe}} 
+restart
+run 10 us
+close_sim
+current_sim simulation_4
+launch_simulation
+open_wave_config F:/COD/lab3/lab3_FIFO/lab3_FIFO.srcs/sim_1/imports/lab3_FIFO/FIFO_tb_behav.wcfg
+source FIFO_tb.tcl
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/x_pe}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/state}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/next_state}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/FIFO_tb/FIFO_DUT/debouncer_in_DUT/x}} 
+restart
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab3/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+current_sim simulation_4
+close_sim
+close_sim

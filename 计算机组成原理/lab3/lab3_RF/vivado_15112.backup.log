@@ -1,0 +1,178 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 17 16:21:10 2019
+# Process ID: 15112
+# Current directory: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18780
+# Log file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VIVADO_Project/COD/lab3_RF/lab3_RF.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 785.637 ; gain = 70.590
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_RF/lab3_RF.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_RF/lab3_RF.srcs/sim_1/new/test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e45e9ce9e03d4b63af0feeeccffdbd7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_tb_behav xil_defaultlib.test_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port a on this module [D:/VIVADO_Project/COD/lab3_RF/lab3_RF.srcs/sim_1/new/test_tb.v:32]
+ERROR: [VRFC 10-2063] Module <debouncer> not found while processing module instance <DUT> [D:/VIVADO_Project/COD/lab3_RF/lab3_RF.srcs/sources_1/new/debouncer.v:29]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 811.258 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_RF/lab3_RF.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_RF/lab3_RF.srcs/sim_1/new/test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e45e9ce9e03d4b63af0feeeccffdbd7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_tb_behav xil_defaultlib.test_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.test_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 17 16:23:24 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 819.414 ; gain = 0.410
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_tb_behav -key {Behavioral:sim_1:Functional:test_tb} -tclbatch {test_tb.tcl} -view {D:/VIVADO_Project/COD/lab3_RF/RF_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config D:/VIVADO_Project/COD/lab3_RF/RF_tb_behav.wcfg
+WARNING: Simulation object /RF_tb/ra0 was not found in the design.
+WARNING: Simulation object /RF_tb/ra1 was not found in the design.
+WARNING: Simulation object /RF_tb/wa was not found in the design.
+WARNING: Simulation object /RF_tb/wd was not found in the design.
+WARNING: Simulation object /RF_tb/we was not found in the design.
+WARNING: Simulation object /RF_tb/clk was not found in the design.
+WARNING: Simulation object /RF_tb/rst was not found in the design.
+WARNING: Simulation object /RF_tb/rd0 was not found in the design.
+WARNING: Simulation object /RF_tb/rd1 was not found in the design.
+WARNING: Simulation object /RF_tb/DUT/RF was not found in the design.
+source test_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 835.133 ; gain = 16.273
+current_wave_config {RF_tb_behav.wcfg}
+RF_tb_behav.wcfg
+add_wave {{/test_tb/x}} 
+current_wave_config {RF_tb_behav.wcfg}
+RF_tb_behav.wcfg
+add_wave {{/test_tb/sel}} 
+current_wave_config {RF_tb_behav.wcfg}
+RF_tb_behav.wcfg
+add_wave {{/test_tb/clk}} 
+current_wave_config {RF_tb_behav.wcfg}
+RF_tb_behav.wcfg
+add_wave {{/test_tb/rst}} 
+current_wave_config {RF_tb_behav.wcfg}
+RF_tb_behav.wcfg
+add_wave {{/test_tb/DUT/a}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 836.672 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e45e9ce9e03d4b63af0feeeccffdbd7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_tb_behav xil_defaultlib.test_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 836.672 ; gain = 0.000
+archive_project D:/VIVADO_Project/COD/lab3_RF.xpr.zip -temp_dir C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15112-LAPTOP-NVHH3IQN -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15112-LAPTOP-NVHH3IQN' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15112-LAPTOP-NVHH3IQN/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

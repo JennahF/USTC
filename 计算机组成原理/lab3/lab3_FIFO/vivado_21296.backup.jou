@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 18 19:56:22 2019
+# Process ID: 21296
+# Current directory: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20504
+# Log file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+source FIFO.tcl
+relaunch_sim
+synth_design -rtl -name rtl_1
+reset_run synth_1
+relaunch_sim
+close_sim
+launch_simulation
+source FIFO.tcl
+run all
+current_wave_config {Untitled 2}
+add_wave {{/FIFO/en_in}} 
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIFO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+relaunch_sim
+open_project D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.xpr
+update_compile_order -fileset sources_1
+create_project lab3_FIFO_NE D:/VIVADO_Project/COD/lab3_FIFO_NE -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project lab3_FIFO
+current_project lab3_FIFO_NE
+file mkdir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new
+set_property simulator_language Verilog [current_project]
+current_project lab3_FIFO
+current_project lab3_FIFO_NE
+close [ open D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v w ]
+add_files D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v
+current_project lab3_FIFO
+current_project lab3_FIFO_NE
+update_compile_order -fileset sources_1
+file mkdir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v
+update_compile_order -fileset sim_1
+current_project lab3_FIFO
+close_sim
+close_project
+launch_simulation
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {32.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {128.000} CONFIG.CLKOUT1_JITTER {631.442} CONFIG.CLKOUT1_PHASE_ERROR {346.848}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 8 clk_wiz_0_synth_1
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.ip_user_files/sim_scripts -ip_user_files_dir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.ip_user_files -ipstatic_source_dir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/modelsim} {questa=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/questa} {riviera=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/riviera} {activehdl=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source FIFO.tcl
+relaunch_sim
+current_project lab3_LCU_RF
+current_project lab3_FIFO_NE
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIFO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+reset_simulation -simset sim_1 -mode behavioral
+close_sim
+launch_simulation
+launch_simulation
+source FIFO_tb.tcl
+current_project lab3_LCU_RF
+close_project
+open_project D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source FIFO_tb.tcl
+run 600 ns
+run 600 ns
+run 600 ns
+current_project lab3_FIFO_NE
+close_project
+current_wave_config {Untitled 5}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/sclk}} 
+relaunch_sim
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+save_wave_config {D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg
+set_property xsim.view D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+current_wave_config {Untitled 6}
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/sclk}} 
+relaunch_sim
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/divider_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/divider_tb.v
+update_compile_order -fileset sim_1
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+relaunch_sim
+save_wave_config {D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav1.wcfg}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/SCU_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/SCU_tb.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/display_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/display_tb.v
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_project D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.xpr
+update_compile_order -fileset sources_1
+file mkdir D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1
+file mkdir D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1/new
+close [ open D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1/new/LCU_RF.xdc w ]
+add_files -fileset constrs_1 D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1/new/LCU_RF.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_project lab3_FIFO
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+current_project lab3_LCU_RF
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_project lab3_FIFO
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_project lab3_LCU_RF
+close_project
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_project lab3_SCU D:/VIVADO_Project/COD/lab3_SCU -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project lab3_FIFO
+current_project lab3_SCU
+file mkdir D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/sources_1/new
+set_property simulator_language Verilog [current_project]
+current_project lab3_FIFO
+current_project lab3_SCU
+close [ open D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/sources_1/new/SCU.v w ]
+add_files D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/sources_1/new/SCU.v
+current_project lab3_FIFO
+current_project lab3_SCU
+update_compile_order -fileset sources_1
+file mkdir D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1
+file mkdir D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1/new
+close [ open D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1/new/SCU.xdc w ]
+add_files -fileset constrs_1 D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1/new/SCU.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_project lab3_FIFO
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+current_project lab3_SCU
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.runs/impl_1/display.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_project
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top counter_3BIT_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg
+source counter_3BIT_tb.tcl
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/counter_3BIT_tb/counter_test/sclk}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/counter_3BIT_tb/counter_test/rst_n}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+add_wave {{/counter_3BIT_tb/counter_test/cnt}} 
+relaunch_sim
+close_sim
+create_project lab3_test D:/VIVADO_Project/COD/lab3_test -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project lab3_FIFO
+current_project lab3_test
+file mkdir D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/new
+set_property simulator_language Verilog [current_project]
+current_project lab3_FIFO
+current_project lab3_test
+close [ open D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/new/test.v w ]
+add_files D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/new/test.v
+file mkdir D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/constrs_1/new
+close [ open D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/constrs_1/new/test.xdc w ]
+add_files -fileset constrs_1 D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/constrs_1/new/test.xdc
+current_project lab3_FIFO
+current_project lab3_test
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top divider [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {32.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {128.000} CONFIG.CLKOUT1_JITTER {631.442} CONFIG.CLKOUT1_PHASE_ERROR {346.848}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files  d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 8 clk_wiz_0_synth_1
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/VIVADO_Project/COD/lab3_test/lab3_test.ip_user_files/sim_scripts -ip_user_files_dir D:/VIVADO_Project/COD/lab3_test/lab3_test.ip_user_files -ipstatic_source_dir D:/VIVADO_Project/COD/lab3_test/lab3_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/modelsim} {questa=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/questa} {riviera=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/riviera} {activehdl=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project lab3_FIFO
+current_project lab3_test
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SCU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/impl_1/SCU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_project
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project D:/VIVADO_Project/COD/lab3_FIFO.xpr.zip -temp_dir C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21296-LAPTOP-NVHH3IQN -force -include_local_ip_cache

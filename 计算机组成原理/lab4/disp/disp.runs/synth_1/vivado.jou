@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 23 16:39:52 2019
+# Process ID: 7848
+# Current directory: F:/COD/lab4/disp/disp.runs/synth_1
+# Command line: vivado.exe -log vga_disp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_disp.tcl
+# Log file: F:/COD/lab4/disp/disp.runs/synth_1/vga_disp.vds
+# Journal file: F:/COD/lab4/disp/disp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_disp.tcl -notrace

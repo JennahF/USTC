@@ -1,0 +1,2676 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 18 19:56:22 2019
+# Process ID: 21296
+# Current directory: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20504
+# Log file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/WZY/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 838.945 ; gain = 93.883
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Apr 18 20:09:26 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Apr 18 20:18:34 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 860.117 ; gain = 1.602
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_behav -key {Behavioral:sim_1:Functional:FIFO} -tclbatch {FIFO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source FIFO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 882.215 ; gain = 26.336
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 886.398 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 886.398 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 886.734 ; gain = 0.641
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FIFO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 997.781 ; gain = 106.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:194]
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2p bound to: 3'b010 
+	Parameter S2 bound to: 3'b011 
+	Parameter S3 bound to: 3'b100 
+	Parameter S3p bound to: 3'b101 
+	Parameter M bound to: 20'b11110100001001000000 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:194]
+INFO: [Synth 8-6157] synthesizing module 'LCU_RF' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:63]
+INFO: [Synth 8-6157] synthesizing module 'LCU' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:83]
+	Parameter WAIT bound to: 3'b000 
+	Parameter INQ bound to: 3'b001 
+	Parameter CHECK_FULL bound to: 3'b010 
+	Parameter OUTQ bound to: 3'b011 
+	Parameter CHECK_EMPTY bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'LCU' (2#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:83]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:274]
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 3 - type: integer 
+	Parameter RST_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RF' (3#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:274]
+INFO: [Synth 8-6155] done synthesizing module 'LCU_RF' (4#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:63]
+INFO: [Synth 8-6157] synthesizing module 'SCU' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:44]
+INFO: [Synth 8-6157] synthesizing module 'display' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:308]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:375]
+INFO: [Synth 8-226] default block is never used [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:383]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (5#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:375]
+INFO: [Synth 8-6157] synthesizing module 'seg_ctrl' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:398]
+INFO: [Synth 8-6155] done synthesizing module 'seg_ctrl' (6#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:398]
+INFO: [Synth 8-6155] done synthesizing module 'display' (7#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:308]
+WARNING: [Synth 8-689] width (3) of port connection 'head' does not match port width (4) of module 'display' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+INFO: [Synth 8-6157] synthesizing module 'divider' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:325]
+	Parameter N bound to: 12'b100111000100 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21296-LAPTOP-NVHH3IQN/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (8#1) [C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21296-LAPTOP-NVHH3IQN/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (9#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:325]
+INFO: [Synth 8-6157] synthesizing module 'counter_3BIT' [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:360]
+	Parameter M bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'counter_3BIT' (10#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:360]
+INFO: [Synth 8-6155] done synthesizing module 'SCU' (11#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (12#1) [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1041.563 ; gain = 150.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.563 ; gain = 150.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.563 ; gain = 150.059
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'SCU_DUT/divider_DUT/d1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'SCU_DUT/divider_DUT/d1/inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'SCU_DUT/divider_DUT/d1/inst'
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'SCU_DUT/divider_DUT/d1/inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'SCU_DUT/divider_DUT/d1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/constrs_1/new/FIFO.xdc]
+Finished Parsing XDC File [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/constrs_1/new/FIFO.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1405.789 ; gain = 514.285
+36 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1405.789 ; gain = 518.289
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1
+
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1405.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1405.789 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1405.789 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1405.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_behav -key {Behavioral:sim_1:Functional:FIFO} -tclbatch {FIFO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source FIFO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1405.789 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1405.789 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/FIFO/en_in}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1405.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1405.789 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1405.789 ; gain = 0.000
+set_property top FIFO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <FIF0> not found while processing module instance <FIFO_DUT> [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v:35]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+open_project D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+create_project lab3_FIFO_NE D:/VIVADO_Project/COD/lab3_FIFO_NE -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1405.789 ; gain = 0.000
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project lab3_FIFO
+current_project lab3_FIFO_NE
+file mkdir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new
+set_property simulator_language Verilog [current_project]
+current_project lab3_FIFO
+current_project lab3_FIFO_NE
+close [ open D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v w ]
+add_files D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v
+current_project lab3_FIFO
+current_project lab3_FIFO_NE
+update_compile_order -fileset sources_1
+file mkdir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v
+update_compile_order -fileset sim_1
+ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation without saving wave configuration.
+current_project lab3_FIFO
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a387e3395dbc4db7aaf228cd6d6d5a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <clk_wiz_0> not found while processing module instance <d1> [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v:336]
+ERROR: [VRFC 10-2063] Module <counter_3BIT> not found while processing module instance <counter_DUT> [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v:59]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {32.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {128.000} CONFIG.CLKOUT1_JITTER {631.442} CONFIG.CLKOUT1_PHASE_ERROR {346.848}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 8 clk_wiz_0_synth_1
+[Thu Apr 18 20:54:27 2019] Launched clk_wiz_0_synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.runs/clk_wiz_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'clk_wiz_0'... please wait for 'clk_wiz_0_synth_1' run to finish...
+wait_on_run clk_wiz_0_synth_1
+[Thu Apr 18 20:54:27 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Apr 18 20:54:32 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Apr 18 20:54:37 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Apr 18 20:54:42 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Apr 18 20:54:52 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Apr 18 20:55:02 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Apr 18 20:55:12 2019] Waiting for clk_wiz_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_wiz_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source clk_wiz_0.tcl -notrace
+Command: synth_design -top clk_wiz_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14656 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 364.113 ; gain = 98.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 32.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 128.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.488 ; gain = 152.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.488 ; gain = 152.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.488 ; gain = 152.914
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clk_wiz_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 678.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 678.570 ; gain = 412.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 678.570 ; gain = 412.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.runs/clk_wiz_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 678.570 ; gain = 412.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 678.570 ; gain = 412.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 678.570 ; gain = 412.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 732.105 ; gain = 466.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 732.105 ; gain = 466.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 732.105 ; gain = 466.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |MMCME2_ADV |     1|
+|3     |IBUF       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |     4|
+|2     |  inst   |clk_wiz_0_clk_wiz |     4|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 733.230 ; gain = 467.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 733.230 ; gain = 207.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 733.230 ; gain = 467.656
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 755.543 ; gain = 501.441
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 759.855 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 20:55:15 2019...
+[Thu Apr 18 20:55:17 2019] clk_wiz_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:50 . Memory (MB): peak = 1405.789 ; gain = 0.000
+export_simulation -of_objects [get_files d:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.ip_user_files/sim_scripts -ip_user_files_dir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.ip_user_files -ipstatic_source_dir D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/modelsim} {questa=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/questa} {riviera=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/riviera} {activehdl=D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a387e3395dbc4db7aaf228cd6d6d5a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 18 20:55:43 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1449.605 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_behav -key {Behavioral:sim_1:Functional:FIFO} -tclbatch {FIFO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source FIFO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1457.703 ; gain = 8.125
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1460.563 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a387e3395dbc4db7aaf228cd6d6d5a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_behav xil_defaultlib.FIFO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1460.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1460.563 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1460.563 ; gain = 0.000
+current_project lab3_LCU_RF
+current_project lab3_FIFO_NE
+set_property top FIFO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/FIFO_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav/xsim.type
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav/xsim.xdbg
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav/xsimcrash.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav/xsimk.exe
+WARNING: [Vivado 12-3661] Failed to remove file:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav/xsimkernel.log
+WARNING: [Vivado 12-4421] Failed to remove directory:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_behav
+WARNING: [Vivado 12-4421] Failed to remove directory:D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir
+INFO: [Vivado 12-2267] Reset complete
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1460.563 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a387e3395dbc4db7aaf228cd6d6d5a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <FIF0> not found while processing module instance <FIFO_DUT> [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v:35]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1460.563 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a387e3395dbc4db7aaf228cd6d6d5a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim/xsim.dir/FIFO_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 55.672 ; gain = 1.031
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 18 21:03:18 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO_NE/lab3_FIFO_NE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_tb_behav -key {Behavioral:sim_1:Functional:FIFO_tb} -tclbatch {FIFO_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source FIFO_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.102 ; gain = 1.539
+current_project lab3_LCU_RF
+close_project
+open_project D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1467.281 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/xsim.dir/FIFO_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 56.086 ; gain = 1.613
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 18 21:06:02 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1467.281 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_tb_behav -key {Behavioral:sim_1:Functional:FIFO_tb} -tclbatch {FIFO_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source FIFO_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1467.281 ; gain = 0.000
+run 600 ns
+run 600 ns
+run 600 ns
+current_project lab3_FIFO_NE
+close_project
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/sclk}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1470.105 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1470.105 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1470.105 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1470.105 ; gain = 0.000
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+save_wave_config {D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg
+set_property xsim.view D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.406 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1470.406 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/FIFO_tb/FIFO_DUT/SCU_DUT/sclk}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.406 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1470.406 ; gain = 0.000
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/divider_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/divider_tb.v
+update_compile_order -fileset sim_1
+run 600 us
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance FIFO_tb.FIFO_DUT.SCU_DUT.divider_DUT.d1.inst.mmcm_adv_inst 
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+run 600 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port head [D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.LCU_RF
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.seg_ctrl
+Compiling module xil_defaultlib.display
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.SCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1470.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1470.406 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1470.406 ; gain = 0.000
+save_wave_config {D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav1.wcfg}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/SCU_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/SCU_tb.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/display_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/display_tb.v
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 12:16:45 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+[Fri Apr 19 12:16:46 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 12:17:56 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+[Fri Apr 19 12:17:56 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1475.578 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_project D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+file mkdir D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1
+file mkdir D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1/new
+close [ open D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1/new/LCU_RF.xdc w ]
+add_files -fileset constrs_1 D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.srcs/constrs_1/new/LCU_RF.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 12:36:22 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/synth_1/runme.log
+[Fri Apr 19 12:36:22 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 12:45:21 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/synth_1/runme.log
+[Fri Apr 19 12:45:21 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 12:48:41 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/synth_1/runme.log
+[Fri Apr 19 12:48:41 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 12:54:07 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/synth_1/runme.log
+[Fri Apr 19 12:54:07 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/runme.log
+current_project lab3_FIFO
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_project lab3_LCU_RF
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr 19 16:08:36 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Apr 19 16:10:19 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/runme.log
+close_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 16:12:38 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.runs/impl_1/LCU_RF.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_project lab3_FIFO
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr 19 16:32:08 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr 19 16:33:12 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Apr 19 16:34:17 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr 19 16:36:42 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr 19 16:41:03 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Apr 19 16:42:17 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 16:43:31 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+[Fri Apr 19 16:43:31 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/runme.log
+current_project lab3_LCU_RF
+close_project
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_LCU_RF/lab3_LCU_RF.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 55.891 ; gain = 1.070
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 19 16:47:58 2019...
+close_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2135.859 ; gain = 0.113
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+create_project lab3_SCU D:/VIVADO_Project/COD/lab3_SCU -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2138.105 ; gain = 2.246
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project lab3_FIFO
+current_project lab3_SCU
+file mkdir D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/sources_1/new
+set_property simulator_language Verilog [current_project]
+current_project lab3_FIFO
+current_project lab3_SCU
+close [ open D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/sources_1/new/SCU.v w ]
+add_files D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/sources_1/new/SCU.v
+current_project lab3_FIFO
+current_project lab3_SCU
+update_compile_order -fileset sources_1
+file mkdir D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1
+file mkdir D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1/new
+close [ open D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1/new/SCU.xdc w ]
+add_files -fileset constrs_1 D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.srcs/constrs_1/new/SCU.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 17:10:28 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.runs/synth_1/runme.log
+[Fri Apr 19 17:10:28 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.runs/impl_1/runme.log
+current_project lab3_FIFO
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_project lab3_SCU
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.runs/impl_1/display.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 17:17:07 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.runs/synth_1/runme.log
+[Fri Apr 19 17:17:07 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.runs/impl_1/runme.log
+close_project
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_SCU/lab3_SCU.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 55.531 ; gain = 1.227
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 19 17:23:07 2019...
+close_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 2144.012 ; gain = 0.422
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v w ]
+add_files -fileset sim_1 D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v
+update_compile_order -fileset sim_1
+set_property top counter_3BIT_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter_3BIT_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_3BIT_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module SCU
+INFO: [VRFC 10-311] analyzing module LCU_RF
+INFO: [VRFC 10-311] analyzing module LCU
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module counter_3BIT
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module seg_ctrl
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_3BIT_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot counter_3BIT_tb_behav xil_defaultlib.counter_3BIT_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.counter_3BIT_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot counter_3BIT_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim/xsim.dir/counter_3BIT_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 19 17:31:54 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2144.012 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_3BIT_tb_behav -key {Behavioral:sim_1:Functional:counter_3BIT_tb} -tclbatch {counter_3BIT_tb.tcl} -view {D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config D:/VIVADO_Project/COD/lab3_FIFO/FIFO_tb_behav.wcfg
+WARNING: Simulation object /FIFO_tb/in was not found in the design.
+WARNING: Simulation object /FIFO_tb/en_in was not found in the design.
+WARNING: Simulation object /FIFO_tb/en_out was not found in the design.
+WARNING: Simulation object /FIFO_tb/clk was not found in the design.
+WARNING: Simulation object /FIFO_tb/rst was not found in the design.
+WARNING: Simulation object /FIFO_tb/outer was not found in the design.
+WARNING: Simulation object /FIFO_tb/an was not found in the design.
+WARNING: Simulation object /FIFO_tb/seg was not found in the design.
+WARNING: Simulation object /FIFO_tb/dp was not found in the design.
+WARNING: Simulation object /FIFO_tb/FIFO_DUT/SCU_DUT/sclk was not found in the design.
+source counter_3BIT_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_3BIT_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 2151.234 ; gain = 7.223
+current_wave_config {FIFO_tb_behav.wcfg}
+FIFO_tb_behav.wcfg
+add_wave {{/counter_3BIT_tb/counter_test/sclk}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+FIFO_tb_behav.wcfg
+add_wave {{/counter_3BIT_tb/counter_test/rst_n}} 
+current_wave_config {FIFO_tb_behav.wcfg}
+FIFO_tb_behav.wcfg
+add_wave {{/counter_3BIT_tb/counter_test/cnt}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2151.262 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx2/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter_3BIT_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_3BIT_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.srcs/sim_1/new/counter_3BIT_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_3BIT_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63d61fe7758a4cbea822d50ee5f26ff6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot counter_3BIT_tb_behav xil_defaultlib.counter_3BIT_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_3BIT
+Compiling module xil_defaultlib.counter_3BIT_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot counter_3BIT_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2151.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2151.262 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 2151.410 ; gain = 0.148
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+create_project lab3_test D:/VIVADO_Project/COD/lab3_test -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2152.402 ; gain = 0.000
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project lab3_FIFO
+current_project lab3_test
+file mkdir D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/new
+set_property simulator_language Verilog [current_project]
+current_project lab3_FIFO
+current_project lab3_test
+close [ open D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/new/test.v w ]
+add_files D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/new/test.v
+file mkdir D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/constrs_1/new
+close [ open D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/constrs_1/new/test.xdc w ]
+add_files -fileset constrs_1 D:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/constrs_1/new/test.xdc
+current_project lab3_FIFO
+current_project lab3_test
+update_compile_order -fileset sources_1
+set_property top divider [current_fileset]
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {32.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {128.000} CONFIG.CLKOUT1_JITTER {631.442} CONFIG.CLKOUT1_PHASE_ERROR {346.848}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 8 clk_wiz_0_synth_1
+[Fri Apr 19 17:41:44 2019] Launched clk_wiz_0_synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/clk_wiz_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'clk_wiz_0'... please wait for 'clk_wiz_0_synth_1' run to finish...
+wait_on_run clk_wiz_0_synth_1
+[Fri Apr 19 17:41:44 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:41:49 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:41:54 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:41:59 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:42:09 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:42:19 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:42:29 2019] Waiting for clk_wiz_0_synth_1 to finish...
+[Fri Apr 19 17:42:39 2019] Waiting for clk_wiz_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_wiz_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source clk_wiz_0.tcl -notrace
+Command: synth_design -top clk_wiz_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17144 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 364.160 ; gain = 98.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 32.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 128.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/Xilinx2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.145 ; gain = 152.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.145 ; gain = 152.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.145 ; gain = 152.500
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Parsing XDC File [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clk_wiz_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 678.660 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 678.660 ; gain = 413.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 678.660 ; gain = 413.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/clk_wiz_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 678.660 ; gain = 413.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 678.660 ; gain = 413.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 678.660 ; gain = 413.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 736.723 ; gain = 471.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 736.723 ; gain = 471.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 736.723 ; gain = 471.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |MMCME2_ADV |     1|
+|3     |IBUF       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |     4|
+|2     |  inst   |clk_wiz_0_clk_wiz |     4|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 738.113 ; gain = 211.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 738.113 ; gain = 472.469
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 759.207 ; gain = 505.035
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 759.207 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 17:42:35 2019...
+[Fri Apr 19 17:42:39 2019] clk_wiz_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 2169.148 ; gain = 4.223
+export_simulation -of_objects [get_files d:/VIVADO_Project/COD/lab3_test/lab3_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/VIVADO_Project/COD/lab3_test/lab3_test.ip_user_files/sim_scripts -ip_user_files_dir D:/VIVADO_Project/COD/lab3_test/lab3_test.ip_user_files -ipstatic_source_dir D:/VIVADO_Project/COD/lab3_test/lab3_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/modelsim} {questa=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/questa} {riviera=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/riviera} {activehdl=D:/VIVADO_Project/COD/lab3_test/lab3_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project lab3_FIFO
+current_project lab3_test
+set_property top SCU [current_fileset]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 17:52:22 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/synth_1/runme.log
+[Fri Apr 19 17:52:22 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Fri Apr 19 17:56:46 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/synth_1/runme.log
+[Fri Apr 19 17:56:46 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 18:00:03 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2173.094 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_test/lab3_test.runs/impl_1/SCU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_project
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VIVADO_Project/COD/lab3_test/lab3_test.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 19 18:04:02 2019...
+close_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2173.094 ; gain = 0.000
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 19 18:35:29 2019] Launched synth_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/synth_1/runme.log
+[Fri Apr 19 18:35:29 2019] Launched impl_1...
+Run output will be captured here: D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2173.094 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B626A
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/VIVADO_Project/COD/lab3_FIFO/lab3_FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+archive_project D:/VIVADO_Project/COD/lab3_FIFO.xpr.zip -temp_dir C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21296-LAPTOP-NVHH3IQN -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21296-LAPTOP-NVHH3IQN' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/WZY/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21296-LAPTOP-NVHH3IQN/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

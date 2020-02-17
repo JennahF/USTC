@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 25 19:47:10 2019
+# Process ID: 10924
+# Current directory: F:/COD/lab4/paintboard/paintboard.runs/dist_mem_gen_0_synth_1
+# Command line: vivado.exe -log dist_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_0.tcl
+# Log file: F:/COD/lab4/paintboard/paintboard.runs/dist_mem_gen_0_synth_1/dist_mem_gen_0.vds
+# Journal file: F:/COD/lab4/paintboard/paintboard.runs/dist_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dist_mem_gen_0.tcl -notrace

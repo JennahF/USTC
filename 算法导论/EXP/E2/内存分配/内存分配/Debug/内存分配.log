@@ -1,0 +1,13 @@
+﻿  pch.cpp
+  内存分配.cpp
+内存分配.obj : error LNK2005: "struct RBNode * __cdecl FindSuccessor(struct RBNode *)" (?FindSuccessor@@YAPAURBNode@@PAU1@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "int __cdecl IntervalSearch(struct RBNode *,struct INT)" (?IntervalSearch@@YAHPAURBNode@@UINT@@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "void __cdecl LeftRotate(struct RBNode * *,struct RBNode *)" (?LeftRotate@@YAXPAPAURBNode@@PAU1@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "int __cdecl Overlap(struct INT,struct INT)" (?Overlap@@YAHUINT@@0@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "void __cdecl RBInsert(struct RBNode * *,struct INT)" (?RBInsert@@YAXPAPAURBNode@@UINT@@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "void __cdecl RBInsertAdjust(struct RBNode * *,struct RBNode *)" (?RBInsertAdjust@@YAXPAPAURBNode@@PAU1@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "void __cdecl RightRotate(struct RBNode * *,struct RBNode *)" (?RightRotate@@YAXPAPAURBNode@@PAU1@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "struct RBNode * __cdecl Sibling(struct RBNode *)" (?Sibling@@YAPAURBNode@@PAU1@@Z) 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: _main 已经在 pch.obj 中定义
+内存分配.obj : error LNK2005: "struct RBNode NIL" (?NIL@@3URBNode@@A) 已经在 pch.obj 中定义
+F:\1fr\各科作业实验\算法导论\EXP\E2\内存分配\Debug\内存分配.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

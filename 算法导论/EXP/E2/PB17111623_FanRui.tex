@@ -1,0 +1,305 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}
+\graphicspath{{img/}} 
+\title{Expriment\ 2}
+\author{PB17111623}
+\author{PB17111623 范睿}
+\date{\today}
+\usepackage[a4paper,top=3cm,bottom=2.5cm]{geometry}
+\usepackage{algorithm}  
+\usepackage{algorithmicx}
+\usepackage{amsmath}  
+\usepackage{algpseudocode}  %算法的包
+\usepackage{amssymb}
+\begin{document}
+\maketitle
+\section{数据库查询v2}
+\subsection{题目}
+勤奋的小明为了预习下学期的数据库课程，决定亲自实现一个简单的数据库系统。该数据库系统需要处理用户的数据库插入和查询语句，并输出相应的输出。
+具体来说，用户的输入共包含若干条插入语句和查询语句。其中每条插入语句包含一个非负整数表示需要插入的数据。每条查询语句包含一个整数表示待查询的键值，若该键值存在则直接输出该键值，否则输出数据库中比该键值小的最大键值。\\
+
+输入:\\
+首先是若干行插入语句，每行的格式为如下的一种：\\
+INSERT keykey\\
+FIND keykey\\
+最后单独的一行EXIT表示输入结束。\\
+
+数据规模：\\
+插入语句和查询语句一共不超过2,000,000条。\\
+$0\leq key \leq 10^9$\\
+
+输出：\\
+对每条查询语句输出一行，每行输出1个数字，表示查询的结果。\\
+该键值存在则直接输出该键值，否则输出数据库中比该键值小的最大键值。\\
+
+Sample Input:\\ 
+INSERT 7\\
+INSERT 11\\
+INSERT 2\\
+FIND 2\\
+INSERT 5\\
+INSERT 3\\
+FIND 4\\
+FIND 7\\
+EXIT\\
+
+Sample Output:\\
+2\\
+3\\
+7\\
+\subsection{思路}
+利用红黑树的数据结构。\\
+遇到INSERT: 插入红黑树，调整红黑树\\
+遇到FIND: 利用红黑树的二叉搜索树的性质快速找到该键。若该键值不在树中，则先找到该插入位置的父节点，若该节点比其理论上的父节点键值大，输出父节点的键值，否则输出父节点的前驱的键值。
+\subsection{算法}
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+\begin{algorithm}
+	\caption{Insert}
+	\begin{algorithmic}[1]
+	\Require RBTree T, key
+	\State{$//node \gets malloc\ a\ memory\ for\ key$}
+	\State{$RBInsert(T, node)$}
+	\State{$RBAdjust(T, node)$}
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{Find}
+	\begin{algorithmic}[1]
+	\Require RBTree T, key
+	\If {T.data is key}
+		\State{print key}
+		return
+	\EndIf
+	\If {T.data $\leq$ key}
+		\If{T.right is NIL} 
+			\State{print T.data}
+		\Else
+			\State{Find(T.right, key)}
+		\EndIf
+	\Else
+		\If{T.left is NIL} 
+			\State{print Precessor(T).data}
+		\Else
+			\State{Find(T.left, key)}
+		\EndIf
+	\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{复杂度分析}
+INSERT和红黑树的Insert时间复杂度一样，为$\mathcal{O}(\log n)$\\
+FIND找到该插入的位置复杂度为$\mathcal{O}(\log n)$,找前驱复杂度为$\mathcal{O}(\log n)$，因此总复杂度为$\mathcal{O}(\log n)$
+
+\section{军训排队}
+\subsection{题目}
+现有n个学生排成一个固定队伍进行军训，教官小明有一份所有n个人的名单（不同的人可能重名）。小明想要在整个队伍中找到一个连续的子队伍，并且满足该子队的所有人恰好有k个不重复的名字。请帮小明计算一下一共有多少种可能的子队伍。\\
+
+输入：\\
+一共有两行，第一行有两个数字n和k，用空格分隔第二行有n个单词$name_i$​，用空格分隔输入保证$len(name_i)\leq5$（即输入的名字最多只含有5个字符）
+
+数据规模：
+
+$0<k<n\ \leq\ 10,000,0000$
+
+输出：\\
+输出一共一个数字，即可能的子队伍数量。\\
+
+Sample Input:\\
+5 2\\
+yyyyy iiiii yyyyy iiiii sssss\\
+
+Sample Output:\\
+7\\
+/*\\
+一共7种可能的子队伍为如下：\\
+yyyyy iiiii\\
+iiiii yyyyy\\
+yyyyy iiiii\\
+iiiii sssss\\
+yyyyy iiiii yyyyy\\
+iiiii yyyyy iiiii\\
+yyyyy iiiii yyyyy iiiii\\
+*/\\
+
+\subsection{思路}
+利用滑动窗口。low，mid，high标记窗口。low$\leq$mid$\leq$high。维持low和mid之间的名字种类有k个，low和high之间的名字种类有k+1个。每当找到这样的组合，可以计算出：以low开始，不同名字的个数有k个的连续组合共有high-mid+1个，然后将low+1，继续寻找。\\
+查找方法：\\
+由于名字的位数最多有5位，将所有情况的个数计算出来，总数=26+26*26+26*26*26+\\26*26*26*26+26*26*26*26*26$\leq$2000000，因此定义一个20000000的LUT，若改名字出现了，设置对应位置为1。
+
+\subsection{算法}
+
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+\begin{algorithm}
+	\caption{}
+	\begin{algorithmic}[1]
+	\Require n, k, names
+	\Ensure sum
+	\State{mid $\gets$ 1}
+	\State{NameNum $\gets$ 0}
+	\State{sum $\gets$ 0}
+	\For{low = 1 to n}
+		\State{mid = max(mid, low)}
+		\While{mid $\leq$ n and NameNum $\leq$ k}
+			\State{//Add names[mid] into Queue}
+			\State{mid $\gets$ mid+1}
+		\EndWhile
+	\If{NameNum $\leq$ k} 
+		\State{return sum}
+	\EndIf
+	\State{high $\gets$ mid}
+	\While{high $\leq$ n and NameExists(names[high])}
+		\State{high $\gets$ high+1}
+	\EndWhile
+	\State{sum += high-mid+1}
+	\State{DecreaseNumberorDelete(names[low])}
+	\EndFor
+	\end{algorithmic}
+\end{algorithm}
+\subsection{复杂度分析}
+low从1走到n，为$\mathcal{O}(n)$,mid从1走到n，为$\mathcal{O}(n)$, 复杂度为$\mathcal{O}(n)$\\
+\\
+\\
+
+\section{内存分配}
+\subsection{题目}
+C语言中需要申请一块连续的内存时需要使用malloc等函数。如果分配成功则返回指向被分配内存的指针(此存储区中的初始值不确定)，否则返回空指针NULL。现在小明决定实现一个类似malloc的内存分配系统，具体来说，他需要连续处理若干申请内存的请求，这个请求用一个闭区间$[a_i..b_i]$来表示。当这个区间和当前已被申请的内存产生重叠时，则返回内存分配失败的信息。否则返回内存分配成功，并将该区间标记为已被占用。假设初始状态下内存均未被占用，管理的内存地址范围为0-1GB（$0-2^{30}$）。\\
+
+输入：\\
+输入数据共n+1行。第一行一个整数n表示共需要处理n次内存分配。然后是n行数据，每行的格式为$a_i b_i$，表示申请区间为$[a_i,b_i]$\\
+
+数据规模：
+
+$n\leq 1,000,000$\\
+$0<a_i\leq b_i \leq 2^{30}$\\
+
+输出:\\
+输出共n行。对于每行内存分配的申请，若申请成功则输出一行0，若申请失败则输出一行-1。
+
+Sample Input:\\
+5\\
+0 1\\
+8 9\\
+5 7\\
+1 2\\
+2 4\\
+
+Sample Output:\\
+0\\
+0\\
+0\\
+-1\\
+0\\
+
+\subsection{思路}
+利用区间树。每个RBNode存一个区间，键值为区间的low值。每次到来一个新区间先查找有没有重叠，若没有，加入区间树，返回1，否则返回0。\\
+查看重叠的方法：从根结点查找，若区间的low值大于根结点的max值，说明没哟overlap，输出1，将它加入区间树，否则观察该区间的low和根结点的键值的大小，若前者大，在根结点的右子树中再次判断，否则在根节点的左子树中再次判断。\\
+
+\subsection{算法}
+
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+\begin{algorithm}
+	\caption{FindInterval}
+	\begin{algorithmic}[1]
+	\Require RBTree T, Interval data
+	\Ensure 1 for no overlap, 0 for overlap 
+	\If{T is NIL} 
+		\State{return 1}
+	\EndIf
+	\If{data.low $\geq$ T.max}
+		\State{return 1}
+	\Else
+		\If{Overlap(T.interval, data)}
+			\State{return 0}
+		\Else
+			\If{data.low $\geq$ T.data.low}
+				\State{return FindInterval(T.right, data)}
+			\Else
+				\State{return FindInterval(T.left, data)}
+			\EndIf
+		\EndIf
+	\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{复杂度分析}
+插入区间和红黑树插入+调整的复杂度相同，为$\mathcal{O}(\log n)$\\
+判断重叠的复杂度为$\mathcal{O}(\log n)$
+
+\section{危险品放置}
+
+\subsection{题目}
+现有若干危险品需要放置在A,B两个仓库。当两种特定的危险品放置在相同地点时即可能产生危险。我们用危险系数$\alpha_{i,j}$表示危险品i,j放置在一起的危险程度。一些危险品即使放置在一起也不会产生任何危险，此时$\alpha_{i,j}=0$，还有一些危险品即使单独放置也会产生危险，此时$\alpha_{i,i}>0$。定义两个仓库整体的危险系数为$\max(\max_{i,j\in A}\alpha_{i,j},\max_{i,j\in B}\alpha_{i,j})$，即放置在一起的所有危险品两两组合的危险系数的最大值。现在对于一组给定的危险系数，需要设计方案使得整体危险系数最小。
+
+输入:\\
+输入共m+1行。第一行两个整数n和m表示共有n种危险品，危险品之间的危险组合（危险系数非零的物品组合）共m种。接下来的m行，每行三个整数$i,j,\alpha_{i,j}$，表示(i,j)为危险组合（i,j可能相等），其危险系数为$\alpha_{i,j}\geq 0$。
+\\
+数据规模：\\
+
+$0<n\leq 100,000$\\
+$0<m\leq1,000,000$\\
+
+输出:\\
+输出共一行，包含一个整数，表示整体危险系数的最小值。\\
+
+Sample Input:\\
+3 3\\
+1 2 4\\
+2 3 3\\
+1 3 2\\
+
+Sample Output:\\
+2\\
+/*\\
+将1,3放在A仓库，2放在B仓库\\
+*/\\
+
+\subsection{思路}
+利用不相交集合的树形结构。
+先将所有危险程度大小从大到小排序，然后从大到小一次访问。每次访问拿到i，j和$\alpha_{i,j}$,先判断i，j有无冲突。若冲突，输出$\alpha_{i,j}$，返回，否则为i,j,i',j'分别建立四个集合，然后将i和j'合并，将j和i'合并，访问下一个。\\
+判断i,j是否冲突的方法是：顺着i的parent向上找到根，顺着j的parent向上找到根，若根相同，说明i和j处在同一集合，不能分开，说明冲突，否则不冲突。
+
+\subsection{算法}
+
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+\begin{algorithm}
+	\caption{dangerous goods}
+	\begin{algorithmic}[1]
+	\Require goods' number n, sorted dangerous degree Ns[m]
+	\Ensure minimun dangerous degress degree
+	\State{a[n] stores $goood_i$'s pointer}
+	\State{b[n] stores $goood_{i'}$'s pointer}
+	\For{i = 1 to n}
+		\If{a[Ns[i].i] is NULL} 
+			MakeSet(a, Ns[i].i)
+		\EndIf
+		\If{a[Ns[i].j] is NULL} 
+			MakeSet(a, Ns[i].j)
+		\EndIf
+		\If{b[Ns[i].i] is NULL} 
+			MakeSet(b, Ns[i].i)
+		\EndIf
+		\If{b[Ns[i].j] is NULL} 
+			MakeSet(b, Ns[i].j)
+		\EndIf
+		\If{FindSet(a, Ns[i].i) == FindSet(a, Ns[i].j)}
+			\State{return Ns[i].alpha}
+		\EndIf
+		\State{Union(a[Ns[i].i], b[Ns[i].j])}
+		\State{Union(a[Ns[i].j], b[Ns[i].i])}
+	\EndFor
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{复杂度分析}
+i从1到n，为$\mathcal{O}(n)$，MakeSet时间为$\mathcal{O}(1)$，Union的操作是不相交集合的Union复杂度相同，为$\mathcal{O}(\alpha(n)), \alpha(n) < 4$，所以总复杂度为$\mathcal{O}(n)$
+
+\end{document}

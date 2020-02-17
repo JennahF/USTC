@@ -1,0 +1,7 @@
+Running: xsim.dir/FIB_sim_behav/xsimk.exe -simmode gui -wdb FIB_sim_behav.wdb -simrunnum 0 -socket 50870
+Design successfully loaded
+Design Loading Memory Usage: 6336 KB (Peak: 6336 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 7064 KB (Peak: 7064 KB)
+Simulation CPU Usage: 93 ms

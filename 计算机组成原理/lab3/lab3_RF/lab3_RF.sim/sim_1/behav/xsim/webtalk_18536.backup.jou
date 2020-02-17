@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 17 16:23:53 2019
+# Process ID: 18536
+# Current directory: D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/VIVADO_Project/COD/lab3_RF/lab3_RF.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/xsim_webtalk.tcl -notrace

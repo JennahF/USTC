@@ -1,0 +1,251 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 26 19:57:11 2019
+# Process ID: 11428
+# Current directory: F:/COD/lab2/SRT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2744 F:\COD\lab2\SRT\SRT.xpr
+# Log file: F:/COD/lab2/SRT/vivado.log
+# Journal file: F:/COD/lab2/SRT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab2/SRT/SRT.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 2}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 3}
+add_wave {{/SRT_sim/R/clk}} 
+current_wave_config {Untitled 3}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 4}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 5}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 6}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run all
+current_wave_config {Untitled 6}
+add_wave {{/SRT_sim/R/clk}} 
+restart
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+current_wave_config {Untitled 6}
+add_wave {{/SRT_sim/R/count}} 
+restart
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+current_wave_config {Untitled 6}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run all
+current_wave_config {Untitled 6}
+add_wave {{/SRT_sim/R/clk}} 
+run all
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+current_wave_config {Untitled 7}
+log_wave {/SRT_sim/R/clk} 
+current_wave_config {Untitled 7}
+add_wave {{/SRT_sim/R/clk}} 
+restart
+run 20 ns
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+restart
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_sim
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+source SRT_sim.tcl
+close_sim
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+launch_simulation
+source SRT_sim.tcl
+run 20 ms
+current_wave_config {Untitled 10}
+add_wave {{/SRT_sim/R/clk_5M}} 
+restart
+run all
+current_wave_config {Untitled 10}
+add_wave {{/SRT_sim/clk}} 
+current_wave_config {Untitled 10}
+add_wave {{/SRT_sim/R/clk}} 
+restart
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+close_sim
+launch_simulation
+source SRT_sim.tcl
+run all
+current_wave_config {Untitled 12}
+add_wave {{/SRT_sim/R/clk}} 
+restart
+run all
+close_sim
+launch_simulation
+source SRT_sim.tcl
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+source SRT_sim.tcl
+restart
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+source SRT_sim.tcl
+restart
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+launch_simulation
+source SRT_sim.tcl
+run all
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab2/SRT/SRT.runs/impl_1/RST.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

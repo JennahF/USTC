@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 18 20:35:24 2019
+# Process ID: 13676
+# Current directory: F:/COD/lab3/FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10076 F:\COD\lab3\FIFO\FIFO.xpr
+# Log file: F:/COD/lab3/FIFO/vivado.log
+# Journal file: F:/COD/lab3/FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab3/FIFO/FIFO.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/COD/lab3/FIFO/FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/COD/lab3/FIFO/FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Apr 23 16:41:59 2019
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_disp_control_sets_placed.rpt
+| Design       : vga_disp
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            1 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             194 |           40 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             342 |           47 |
+| Yes          | No                    | No                     |               8 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             346 |           48 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+|    Clock Signal    |              Enable Signal             |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+|  clk/inst/clk_out1 | vga_data_gen/jump_i_1_n_0              | rst_IBUF                               |                1 |              2 |
+|  clk/inst/clk_out1 | vga_data_gen/max_score[3]_i_1_n_0      |                                        |                1 |              8 |
+|  clk/inst/clk_out1 | vga_data_gen/bird_center_x[0]_i_1_n_0  | rst_IBUF                               |                3 |             24 |
+|  clk/inst/clk_out1 | vga_data_gen/center[5][0]_i_2_n_0      | vga_data_gen/center[5][0]_i_1_n_0      |                3 |             24 |
+|  clk/inst/clk_out1 | vga_data_gen/center[8][0]_i_2_n_0      | vga_data_gen/bottom                    |                3 |             24 |
+|  clk/inst/clk_out1 | vga_data_gen/top[3][0]_i_2_n_0         | vga_data_gen/top[3][0]_i_1_n_0         |                3 |             24 |
+|  clk/inst/clk_out1 | vga_data_gen/y_cnt[11]_i_1_n_0         | rst_IBUF                               |                4 |             24 |
+|  clk/inst/clk_out1 | vga_data_gen/top[8][0]_i_1_n_0         | vga_data_gen/bottom                    |                6 |             48 |
+|  clk/inst/clk_out1 | vga_data_gen/count_V[25]_i_2_n_0       | vga_data_gen/count_V[25]_i_1_n_0       |                7 |             50 |
+|  clk/inst/clk_out1 |                                        | vga_data_gen/count_H[0]_i_1_n_0        |                7 |             56 |
+|  clk/inst/clk_out1 |                                        | vga_data_gen/count_barrier[30]_i_1_n_0 |                7 |             62 |
+|  clk/inst/clk_out1 |                                        | vga_data_gen/count_bird[30]_i_1_n_0    |                7 |             62 |
+|  clk/inst/clk_out1 |                                        | vga_data_gen/count_win[0]_i_1_n_0      |                8 |             62 |
+|  clk/inst/clk_out1 | vga_data_gen/p_0_in0                   | vga_data_gen/up[31]                    |                8 |             62 |
+|  clk/inst/clk_out1 | vga_data_gen/bird_bottom_y[31]_i_1_n_0 | rst_IBUF                               |               10 |             64 |
+|  clk/inst/clk_out1 |                                        | rst_IBUF                               |               18 |            100 |
+|  clk/inst/clk_out1 |                                        |                                        |               40 |            194 |
++--------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+
+

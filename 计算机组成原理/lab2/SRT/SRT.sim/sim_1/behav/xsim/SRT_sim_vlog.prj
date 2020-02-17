@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SRT.srcs/sources_1/ip/clk_wiz_0_1" \
+"../../../../SRT.srcs/sources_1/new/RST.v" \
+"../../../../SRT.srcs/sim_1/new/SRT_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

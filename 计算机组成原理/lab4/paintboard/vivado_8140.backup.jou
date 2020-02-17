@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 30 16:01:55 2019
+# Process ID: 8140
+# Current directory: F:/COD/lab4/paintboard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12716 F:\COD\lab4\paintboard\paintboard.xpr
+# Log file: F:/COD/lab4/paintboard/vivado.log
+# Journal file: F:/COD/lab4/paintboard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/COD/lab4/paintboard/paintboard.xpr

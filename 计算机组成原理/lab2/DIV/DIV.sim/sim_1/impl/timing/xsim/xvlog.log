@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab2/DIV/DIV.sim/sim_1/impl/timing/xsim/DIV_sim_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/COD/lab2/DIV/DIV.srcs/sim_1/new/DIV_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV_sim
