@@ -1,0 +1,63 @@
+===========lv0_1 START========
+return:	Success
+decl_int:	Success
+decl_array:	Success
+input:	Success
+output:	Success
+points of lv0_1 is: 18
+===========lv0_1 END========
+
+===========lv0_2 START========
+num_add:	Success
+num_sub:	Success
+num_mul:	Success
+num_div:	Success
+num_comp1:	Success
+num_le:	Success
+num_lt:	Success
+num_ge:	Success
+num_gt:	Success
+num_eq:	Success
+num_neq:	Success
+num_comp2:	Success
+points of lv0_2 is: 24
+===========lv0_2 END========
+
+===========lv1 START========
+assign_var_local:	Success
+assign_array_local:	Success
+assign_var_global:	Success
+assign_array_global:	Success
+assign_cmp:	Success
+innout:	Success
+negidx:	Success
+negidx_intfuncall:	Success
+negidx_voidfuncall:	Success
+selection1:	Success
+selection2:	Success
+selection3:	Success
+iteration1:	Success
+iteration2:	Success
+scope:	Success
+points of lv1 is: 33
+===========lv1 END========
+
+===========lv2 START========
+funcall_chain:	Success
+assign_chain:	Success
+funcall_var:	Success
+funcall_array:	Success
+funcall_array_array:	Success
+return_in_middle1:	Success
+return_in_middle2:	Success
+points of lv2 is: 17
+===========lv2 END========
+
+===========lv3 START========
+complex1:	Fail
+complex2:	Success
+complex3:	Success
+points of lv3 is: 5
+===========lv3 END========
+
+total points: 97

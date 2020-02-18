@@ -1,0 +1,4 @@
+analyzer/lexical_analyzer.l
+analyzer/syntax_analyzer.y
+build/*
+.ycm_extra_conf.py
